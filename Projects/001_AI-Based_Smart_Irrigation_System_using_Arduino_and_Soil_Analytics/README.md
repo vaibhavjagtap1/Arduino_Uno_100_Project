@@ -13,7 +13,7 @@
 
 | Circuit Diagram | Serial Dashboard |
 |:-:|:-:|
-| ![Circuit](CircuitDiagram/circuit_diagram.svg) | See `ArduinoCode/serial_dashboard.py` |
+| ![Circuit](CircuitDiagram/circuit.svg) | See `ArduinoCode/serial_dashboard.py` |
 
 ---
 
