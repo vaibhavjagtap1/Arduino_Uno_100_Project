@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" font-family="'Courier New', monospace">
+  <!-- Background -->
+  <rect width="900" height="620" fill="#0d1117" rx="12"/>
+  <rect x="10" y="10" width="880" height="600" fill="#161b22" rx="10" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" fill="#58a6ff" font-size="16" font-weight="bold">Project 001 — AI-Based Smart Irrigation System — Circuit Diagram</text>
+  <line x1="50" y1="50" x2="850" y2="50" stroke="#30363d" stroke-width="1"/>
+
+  <!-- ══ ARDUINO UNO ══ -->
+  <rect x="330" y="200" width="200" height="280" fill="#1c2128" rx="8" stroke="#3fb950" stroke-width="2"/>
+  <text x="430" y="222" text-anchor="middle" fill="#3fb950" font-size="12" font-weight="bold">ARDUINO UNO</text>
+  <!-- Pins Left (Digital) -->
+  <text x="338" y="248" fill="#8b949e" font-size="9">D2</text>
+  <text x="338" y="268" fill="#8b949e" font-size="9">D7</text>
+  <text x="338" y="288" fill="#8b949e" font-size="9">D9</text>
+  <text x="338" y="308" fill="#8b949e" font-size="9">D10</text>
+  <text x="338" y="328" fill="#8b949e" font-size="9">D11</text>
+  <text x="338" y="368" fill="#8b949e" font-size="9">A4</text>
+  <text x="338" y="388" fill="#8b949e" font-size="9">A5</text>
+  <!-- Pin dots left -->
+  <circle cx="328" cy="245" r="4" fill="#58a6ff"/>
+  <circle cx="328" cy="265" r="4" fill="#58a6ff"/>
+  <circle cx="328" cy="285" r="4" fill="#3fb950"/>
+  <circle cx="328" cy="305" r="4" fill="#f85149"/>
+  <circle cx="328" cy="325" r="4" fill="#f0883e"/>
+  <circle cx="328" cy="365" r="4" fill="#ffa657"/>
+  <circle cx="328" cy="385" r="4" fill="#ffa657"/>
+  <!-- Pins Right (Analog) -->
+  <text x="512" y="248" fill="#8b949e" font-size="9">A0</text>
+  <text x="512" y="268" fill="#8b949e" font-size="9">A1</text>
+  <text x="512" y="310" fill="#8b949e" font-size="9">5V</text>
+  <text x="512" y="330" fill="#8b949e" font-size="9">GND</text>
+  <!-- Pin dots right -->
+  <circle cx="530" cy="245" r="4" fill="#79c0ff"/>
+  <circle cx="530" cy="265" r="4" fill="#79c0ff"/>
+  <circle cx="530" cy="307" r="4" fill="#ff7b72"/>
+  <circle cx="530" cy="327" r="4" fill="#6e7681"/>
+
+  <!-- ══ SOIL MOISTURE SENSOR ══ -->
+  <rect x="580" y="80" width="130" height="70" fill="#1c2128" rx="6" stroke="#79c0ff" stroke-width="1.5"/>
+  <text x="645" y="101" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="bold">SOIL MOISTURE</text>
+  <text x="645" y="115" text-anchor="middle" fill="#79c0ff" font-size="10">SENSOR</text>
+  <text x="590" y="132" fill="#8b949e" font-size="8">VCC → 5V</text>
+  <text x="590" y="144" fill="#8b949e" font-size="8">GND → GND</text>
+  <text x="590" y="156" fill="#8b949e" font-size="8">AOUT→ A0</text>
+  <!-- Wire: A0 to sensor -->
+  <polyline points="530,245 645,245 645,150" fill="none" stroke="#79c0ff" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="645" cy="150" r="3" fill="#79c0ff"/>
+
+  <!-- ══ DHT11 ══ -->
+  <rect x="580" y="200" width="130" height="70" fill="#1c2128" rx="6" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="645" y="221" text-anchor="middle" fill="#58a6ff" font-size="11" font-weight="bold">DHT11</text>
+  <text x="590" y="240" fill="#8b949e" font-size="8">VCC → 5V</text>
+  <text x="590" y="253" fill="#8b949e" font-size="8">GND → GND</text>
+  <text x="590" y="266" fill="#8b949e" font-size="8">DATA→ D2</text>
+  <!-- Wire: D2 to DHT11 -->
+  <polyline points="328,245 280,245 280,235 580,235" fill="none" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="580" cy="235" r="3" fill="#58a6ff"/>
+
+  <!-- ══ LDR (Light Sensor) ══ -->
+  <rect x="580" y="310" width="130" height="60" fill="#1c2128" rx="6" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="645" y="330" text-anchor="middle" fill="#ffa657" font-size="11" font-weight="bold">LDR SENSOR</text>
+  <text x="590" y="348" fill="#8b949e" font-size="8">+ → 5V (10kΩ divider)</text>
+  <text x="590" y="360" fill="#8b949e" font-size="8">OUT→ A1</text>
+  <!-- Wire: A1 to LDR -->
+  <polyline points="530,265 645,265 645,310" fill="none" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="645" cy="310" r="3" fill="#ffa657"/>
+
+  <!-- ══ RELAY MODULE ══ -->
+  <rect x="100" y="180" width="130" height="80" fill="#1c2128" rx="6" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="165" y="201" text-anchor="middle" fill="#f0883e" font-size="11" font-weight="bold">5V RELAY</text>
+  <text x="165" y="215" text-anchor="middle" fill="#f0883e" font-size="10">MODULE</text>
+  <text x="110" y="232" fill="#8b949e" font-size="8">IN  ← D7</text>
+  <text x="110" y="244" fill="#8b949e" font-size="8">VCC ← 5V</text>
+  <text x="110" y="256" fill="#8b949e" font-size="8">GND ← GND</text>
+  <!-- Wire: D7 to relay -->
+  <polyline points="328,265 280,265 280,220 230,220" fill="none" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="230" cy="220" r="3" fill="#f0883e"/>
+
+  <!-- ══ WATER PUMP ══ -->
+  <ellipse cx="80" cy="340" rx="55" ry="35" fill="#1c2128" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="80" y="336" text-anchor="middle" fill="#58a6ff" font-size="10" font-weight="bold">WATER</text>
+  <text x="80" y="350" text-anchor="middle" fill="#58a6ff" font-size="10">PUMP 12V</text>
+  <!-- Relay to pump -->
+  <line x1="100" y1="260" x2="100" y2="305" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="100" y1="305" x2="80" y2="305" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="80" y1="305" x2="80" y2="310" stroke="#f0883e" stroke-width="1.5"/>
+  <circle cx="80" cy="310" r="3" fill="#f0883e"/>
+
+  <!-- ══ LCD I2C ══ -->
+  <rect x="100" y="380" width="150" height="80" fill="#1c2128" rx="6" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="175" y="401" text-anchor="middle" fill="#ffa657" font-size="11" font-weight="bold">LCD 16×2</text>
+  <text x="175" y="415" text-anchor="middle" fill="#ffa657" font-size="10">(I2C 0x27)</text>
+  <text x="110" y="432" fill="#8b949e" font-size="8">VCC → 5V</text>
+  <text x="110" y="444" fill="#8b949e" font-size="8">GND → GND</text>
+  <text x="110" y="456" fill="#8b949e" font-size="8">SDA → A4</text>
+  <!-- Wire: A4 SDA -->
+  <polyline points="328,365 280,365 280,435 250,435" fill="none" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="250" cy="435" r="3" fill="#ffa657"/>
+  <!-- Wire: A5 SCL -->
+  <polyline points="328,385 270,385 270,450 250,450" fill="none" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="250" cy="450" r="3" fill="#ffa657"/>
+
+  <!-- ══ LEDs ══ -->
+  <!-- Green LED -->
+  <circle cx="170" cy="295" r="14" fill="#1c2128" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="170" y="299" text-anchor="middle" fill="#3fb950" font-size="9" font-weight="bold">LED</text>
+  <text x="170" y="285" text-anchor="middle" fill="#3fb950" font-size="8">GREEN</text>
+  <text x="170" y="316" text-anchor="middle" fill="#8b949e" font-size="7">D9</text>
+  <polyline points="328,285 280,285 280,295 184,295" fill="none" stroke="#3fb950" stroke-width="1.2" stroke-dasharray="4,2"/>
+
+  <!-- Red LED -->
+  <circle cx="220" cy="295" r="14" fill="#1c2128" stroke="#f85149" stroke-width="1.5"/>
+  <text x="220" y="299" text-anchor="middle" fill="#f85149" font-size="9" font-weight="bold">LED</text>
+  <text x="220" y="285" text-anchor="middle" fill="#f85149" font-size="8">RED</text>
+  <text x="220" y="316" text-anchor="middle" fill="#8b949e" font-size="7">D10</text>
+  <polyline points="328,305 290,305 290,295 234,295" fill="none" stroke="#f85149" stroke-width="1.2" stroke-dasharray="4,2"/>
+
+  <!-- ══ BUZZER ══ -->
+  <circle cx="270" cy="335" r="18" fill="#1c2128" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="270" y="330" text-anchor="middle" fill="#f0883e" font-size="9" font-weight="bold">BUZZ</text>
+  <text x="270" y="342" text-anchor="middle" fill="#f0883e" font-size="8">D11</text>
+  <polyline points="328,325 300,325 300,335 288,335" fill="none" stroke="#f0883e" stroke-width="1.2" stroke-dasharray="4,2"/>
+
+  <!-- ══ POWER SUPPLY ══ -->
+  <rect x="380" y="530" width="120" height="40" fill="#1c2128" rx="6" stroke="#ff7b72" stroke-width="1.5"/>
+  <text x="440" y="550" text-anchor="middle" fill="#ff7b72" font-size="10" font-weight="bold">USB / 9V DC</text>
+  <text x="440" y="563" text-anchor="middle" fill="#8b949e" font-size="8">Power Supply</text>
+
+  <!-- ══ LEGEND ══ -->
+  <rect x="620" y="400" width="220" height="140" fill="#1c2128" rx="6" stroke="#30363d" stroke-width="1"/>
+  <text x="730" y="420" text-anchor="middle" fill="#8b949e" font-size="11" font-weight="bold">LEGEND</text>
+  <line x1="635" y1="435" x2="665" y2="435" stroke="#79c0ff" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="675" y="439" fill="#79c0ff" font-size="9">Analog signal</text>
+  <line x1="635" y1="455" x2="665" y2="455" stroke="#58a6ff" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="675" y="459" fill="#58a6ff" font-size="9">Digital signal</text>
+  <line x1="635" y1="475" x2="665" y2="475" stroke="#f0883e" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="675" y="479" fill="#f0883e" font-size="9">Control signal</text>
+  <line x1="635" y1="495" x2="665" y2="495" stroke="#ffa657" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="675" y="499" fill="#ffa657" font-size="9">I2C bus (SDA/SCL)</text>
+  <line x1="635" y1="515" x2="665" y2="515" stroke="#3fb950" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="675" y="519" fill="#3fb950" font-size="9">Status LED</text>
+  <line x1="635" y1="535" x2="665" y2="535" stroke="#ff7b72" stroke-width="2"/>
+  <text x="675" y="539" fill="#ff7b72" font-size="9">Power rail</text>
+
+  <!-- Resistor symbol on LED D9 wire -->
+  <rect x="294" y="280" width="20" height="10" fill="none" stroke="#8b949e" stroke-width="1.5" rx="2"/>
+  <text x="304" y="274" text-anchor="middle" fill="#8b949e" font-size="7">220Ω</text>
+
+  <!-- Resistor symbol on LED D10 wire -->
+  <rect x="294" y="300" width="20" height="10" fill="none" stroke="#8b949e" stroke-width="1.5" rx="2"/>
+  <text x="304" y="293" text-anchor="middle" fill="#8b949e" font-size="7">220Ω</text>
+
+  <!-- Note -->
+  <text x="450" y="595" text-anchor="middle" fill="#6e7681" font-size="9">* 10kΩ pull-up on DHT11 DATA pin. Relay powers pump via external 12V source. LDR uses 10kΩ voltage divider.</text>
+</svg>
