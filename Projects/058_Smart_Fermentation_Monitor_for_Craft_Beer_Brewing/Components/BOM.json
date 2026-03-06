@@ -1,0 +1,12 @@
+{
+  "project": "Smart Fermentation Monitor for Craft Beer Brewing",
+  "category": "Industrial IoT",
+  "projectId": 58,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

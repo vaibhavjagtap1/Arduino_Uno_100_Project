@@ -1,0 +1,12 @@
+{
+  "project": "IoT-Based Smart Classroom Attendance and Environment Monitor",
+  "category": "IoT Systems",
+  "projectId": 84,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

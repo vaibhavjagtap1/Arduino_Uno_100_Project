@@ -1,0 +1,12 @@
+{
+  "project": "Automated Bee Colony Health Monitor with Acoustic Analysis",
+  "category": "Smart Agriculture",
+  "projectId": 81,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

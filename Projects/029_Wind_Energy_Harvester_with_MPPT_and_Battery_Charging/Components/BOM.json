@@ -1,0 +1,12 @@
+{
+  "project": "Wind Energy Harvester with MPPT and Battery Charging",
+  "category": "Renewable Energy",
+  "projectId": 29,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

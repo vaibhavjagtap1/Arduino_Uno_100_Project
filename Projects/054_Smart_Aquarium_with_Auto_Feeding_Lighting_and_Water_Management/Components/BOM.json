@@ -1,0 +1,12 @@
+{
+  "project": "Smart Aquarium with Auto Feeding, Lighting, and Water Management",
+  "category": "IoT Aquaculture",
+  "projectId": 54,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

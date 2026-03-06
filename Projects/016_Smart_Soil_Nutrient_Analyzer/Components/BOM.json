@@ -1,0 +1,12 @@
+{
+  "project": "Smart Soil Nutrient Analyzer",
+  "category": "Smart Agriculture",
+  "projectId": 16,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Industrial Boiler Pressure and Temperature Safety Controller",
+  "category": "Industrial Safety",
+  "projectId": 76,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

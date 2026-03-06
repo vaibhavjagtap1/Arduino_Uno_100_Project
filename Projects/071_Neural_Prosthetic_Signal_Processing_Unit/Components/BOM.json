@@ -1,0 +1,12 @@
+{
+  "project": "Neural Prosthetic Signal Processing Unit",
+  "category": "Healthcare Biomedical",
+  "projectId": 71,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Multi-Room BLE Beacon Indoor Positioning Demo",
+  "category": "IoT Systems",
+  "projectId": 97,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

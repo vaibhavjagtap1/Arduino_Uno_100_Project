@@ -1,0 +1,12 @@
+{
+  "project": "Electronic Nose for Food Quality Detection using Gas Sensor Array",
+  "category": "Food Technology IoT",
+  "projectId": 40,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

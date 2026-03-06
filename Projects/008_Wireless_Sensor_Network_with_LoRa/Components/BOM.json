@@ -1,0 +1,12 @@
+{
+  "project": "Wireless Sensor Network with LoRa",
+  "category": "IoT Systems",
+  "projectId": 8,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

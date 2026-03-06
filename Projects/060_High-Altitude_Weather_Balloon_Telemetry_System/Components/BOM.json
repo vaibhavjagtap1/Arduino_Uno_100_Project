@@ -1,0 +1,12 @@
+{
+  "project": "High-Altitude Weather Balloon Telemetry System",
+  "category": "Aerospace IoT",
+  "projectId": 60,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Haptic Navigation System for Blind Individuals",
+  "category": "Assistive Technology",
+  "projectId": 62,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "CNC Pen Plotter with G-Code Interpreter",
+  "category": "Industrial Automation",
+  "projectId": 44,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Wearable EMG-Based Prosthetic Hand Controller",
+  "category": "Assistive Technology",
+  "projectId": 59,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

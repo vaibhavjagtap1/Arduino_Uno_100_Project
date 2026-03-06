@@ -1,0 +1,12 @@
+{
+  "project": "Laser Security Fence with Intrusion Zone Identification",
+  "category": "Security Systems",
+  "projectId": 77,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

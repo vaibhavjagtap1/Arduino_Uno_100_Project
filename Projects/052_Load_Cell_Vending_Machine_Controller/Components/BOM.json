@@ -1,0 +1,12 @@
+{
+  "project": "Load Cell Vending Machine Controller",
+  "category": "Industrial Automation",
+  "projectId": 52,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

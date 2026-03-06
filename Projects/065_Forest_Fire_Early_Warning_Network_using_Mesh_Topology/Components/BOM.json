@@ -1,0 +1,12 @@
+{
+  "project": "Forest Fire Early Warning Network using Mesh Topology",
+  "category": "Environmental Monitoring",
+  "projectId": 65,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

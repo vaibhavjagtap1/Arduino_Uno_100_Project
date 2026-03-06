@@ -1,0 +1,12 @@
+{
+  "project": "Automatic Solar Panel Cleaning Robot",
+  "category": "Renewable Energy",
+  "projectId": 45,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Smart Railway Level Crossing Automation and Monitoring",
+  "category": "Smart City Safety",
+  "projectId": 86,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

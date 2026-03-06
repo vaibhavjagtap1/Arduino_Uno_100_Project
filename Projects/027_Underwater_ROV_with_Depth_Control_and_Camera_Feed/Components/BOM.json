@@ -1,0 +1,12 @@
+{
+  "project": "Underwater ROV with Depth Control and Camera Feed",
+  "category": "Robotics",
+  "projectId": 27,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

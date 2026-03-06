@@ -1,0 +1,12 @@
+{
+  "project": "Solar Drying System",
+  "category": "Renewable Energy",
+  "projectId": 20,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

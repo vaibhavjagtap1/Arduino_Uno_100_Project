@@ -1,0 +1,12 @@
+{
+  "project": "Automated Plant Disease Detection via Leaf Image Analysis",
+  "category": "AI Agriculture",
+  "projectId": 38,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

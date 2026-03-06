@@ -1,0 +1,12 @@
+{
+  "project": "Self-Charging Autonomous Lawn Mower",
+  "category": "Consumer Robotics",
+  "projectId": 39,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

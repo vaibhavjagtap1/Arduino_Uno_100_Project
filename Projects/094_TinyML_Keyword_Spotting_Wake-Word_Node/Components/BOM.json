@@ -1,0 +1,12 @@
+{
+  "project": "TinyML Keyword Spotting Wake-Word Node",
+  "category": "AI Arduino TinyML",
+  "projectId": 94,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

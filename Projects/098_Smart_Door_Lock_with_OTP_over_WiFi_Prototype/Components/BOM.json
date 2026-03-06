@@ -1,0 +1,12 @@
+{
+  "project": "Smart Door Lock with OTP over WiFi Prototype",
+  "category": "Security Systems",
+  "projectId": 98,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

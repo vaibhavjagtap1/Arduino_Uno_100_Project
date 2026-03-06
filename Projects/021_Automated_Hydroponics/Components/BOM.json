@@ -1,0 +1,12 @@
+{
+  "project": "Automated Hydroponics",
+  "category": "Smart Agriculture",
+  "projectId": 21,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

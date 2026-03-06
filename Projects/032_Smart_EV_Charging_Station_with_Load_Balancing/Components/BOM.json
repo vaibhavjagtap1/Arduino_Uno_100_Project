@@ -1,0 +1,12 @@
+{
+  "project": "Smart EV Charging Station with Load Balancing",
+  "category": "EV Smart Energy",
+  "projectId": 32,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Plant Disease Detection AI",
+  "category": "AI Agriculture",
+  "projectId": 25,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

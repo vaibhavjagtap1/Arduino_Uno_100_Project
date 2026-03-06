@@ -1,0 +1,12 @@
+{
+  "project": "Heliostat Solar Concentrator Mirror Positioning System",
+  "category": "Renewable Energy",
+  "projectId": 96,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

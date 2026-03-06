@@ -1,0 +1,12 @@
+{
+  "project": "Real-Time Fire Detection and Suppression Trigger System",
+  "category": "Safety Automation",
+  "projectId": 33,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

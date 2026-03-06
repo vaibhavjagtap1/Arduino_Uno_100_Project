@@ -1,0 +1,12 @@
+{
+  "project": "Swarm Robotics System with Inter-Robot Communication",
+  "category": "Robotics",
+  "projectId": 69,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

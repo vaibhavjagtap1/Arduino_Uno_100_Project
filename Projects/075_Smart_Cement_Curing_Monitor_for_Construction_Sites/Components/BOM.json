@@ -1,0 +1,12 @@
+{
+  "project": "Smart Cement Curing Monitor for Construction Sites",
+  "category": "Civil Engineering IoT",
+  "projectId": 75,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

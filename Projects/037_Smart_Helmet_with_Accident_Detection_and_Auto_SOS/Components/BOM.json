@@ -1,0 +1,12 @@
+{
+  "project": "Smart Helmet with Accident Detection and Auto SOS",
+  "category": "Safety IoT",
+  "projectId": 37,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

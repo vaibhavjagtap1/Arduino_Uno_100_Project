@@ -1,0 +1,12 @@
+{
+  "project": "Drone-Based Crop Spraying Controller with GPS Waypoints",
+  "category": "Agri Drones",
+  "projectId": 85,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Automated Weather Station",
+  "category": "Environmental Monitoring",
+  "projectId": 11,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

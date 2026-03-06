@@ -1,0 +1,12 @@
+{
+  "project": "Smart Wheelchair Controller with Obstacle Avoidance",
+  "category": "Assistive Technology",
+  "projectId": 95,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

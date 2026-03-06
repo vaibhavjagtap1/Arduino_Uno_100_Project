@@ -1,0 +1,12 @@
+{
+  "project": "Non-Invasive Blood Glucose Monitoring Device using NIR Spectroscopy",
+  "category": "Healthcare Biomedical",
+  "projectId": 3,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Smart Energy Management System for Solar-Battery Microgrid",
+  "category": "Renewable Energy Smart Grid",
+  "projectId": 5,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

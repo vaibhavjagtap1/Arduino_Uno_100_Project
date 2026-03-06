@@ -1,0 +1,12 @@
+{
+  "project": "Automated Dam Gate Control with Flood Prediction Algorithm",
+  "category": "Water Management IoT",
+  "projectId": 73,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

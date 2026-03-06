@@ -1,0 +1,12 @@
+{
+  "project": "Crop Health Monitoring",
+  "category": "Smart Agriculture",
+  "projectId": 14,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Smart Waste Segregation System with Image Classification",
+  "category": "Smart City",
+  "projectId": 51,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

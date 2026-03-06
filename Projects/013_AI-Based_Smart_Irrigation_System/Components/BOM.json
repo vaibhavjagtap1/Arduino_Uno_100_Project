@@ -1,0 +1,12 @@
+{
+  "project": "AI-Based Smart Irrigation System",
+  "category": "Smart Agriculture",
+  "projectId": 13,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Automated Livestock Feeding and Health Monitoring System",
+  "category": "Smart Agriculture",
+  "projectId": 78,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

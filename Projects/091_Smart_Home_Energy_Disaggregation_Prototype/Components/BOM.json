@@ -1,0 +1,12 @@
+{
+  "project": "Smart Home Energy Disaggregation Prototype",
+  "category": "Smart Energy",
+  "projectId": 91,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

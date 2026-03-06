@@ -1,0 +1,12 @@
+{
+  "project": "Active Noise Cancellation System using DSP on Arduino",
+  "category": "Audio Engineering",
+  "projectId": 79,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

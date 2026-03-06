@@ -1,0 +1,12 @@
+{
+  "project": "Biometric ATM Security System with Fingerprint and Face Liveness",
+  "category": "Security Systems",
+  "projectId": 57,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

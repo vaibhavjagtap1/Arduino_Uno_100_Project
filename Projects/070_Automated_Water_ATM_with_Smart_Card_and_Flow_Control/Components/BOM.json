@@ -1,0 +1,12 @@
+{
+  "project": "Automated Water ATM with Smart Card and Flow Control",
+  "category": "Smart City IoT",
+  "projectId": 70,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}
