@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" width="860" height="480" font-family="'Courier New', monospace">
+  <rect width="860" height="480" fill="#0d1117" rx="12"/>
+  <rect x="10" y="10" width="840" height="460" fill="#161b22" rx="10" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="430" y="42" text-anchor="middle" fill="#58a6ff" font-size="15" font-weight="bold">Project 001 — System Architecture Overview</text>
+  <line x1="50" y1="52" x2="810" y2="52" stroke="#30363d" stroke-width="1"/>
+
+  <!-- ── LAYER LABELS ── -->
+  <text x="50" y="100" fill="#6e7681" font-size="10" font-weight="bold">SENSOR LAYER</text>
+  <text x="50" y="220" fill="#6e7681" font-size="10" font-weight="bold">PROCESSING LAYER</text>
+  <text x="50" y="350" fill="#6e7681" font-size="10" font-weight="bold">ACTUATOR LAYER</text>
+  <text x="690" y="100" fill="#6e7681" font-size="10" font-weight="bold">OUTPUT LAYER</text>
+
+  <!-- ══ SENSORS ══ -->
+  <!-- Soil Moisture -->
+  <rect x="50" y="108" width="110" height="52" rx="8" fill="#1c2128" stroke="#79c0ff" stroke-width="1.5"/>
+  <text x="105" y="129" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="bold">SOIL SENSOR</text>
+  <text x="105" y="143" text-anchor="middle" fill="#8b949e" font-size="9">Capacitive</text>
+  <text x="105" y="154" text-anchor="middle" fill="#8b949e" font-size="9">0–100%</text>
+
+  <!-- DHT11 -->
+  <rect x="190" y="108" width="110" height="52" rx="8" fill="#1c2128" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="245" y="129" text-anchor="middle" fill="#58a6ff" font-size="10" font-weight="bold">DHT11</text>
+  <text x="245" y="143" text-anchor="middle" fill="#8b949e" font-size="9">Temp + Humidity</text>
+  <text x="245" y="154" text-anchor="middle" fill="#8b949e" font-size="9">±2°C / ±5%RH</text>
+
+  <!-- LDR -->
+  <rect x="330" y="108" width="110" height="52" rx="8" fill="#1c2128" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="385" y="129" text-anchor="middle" fill="#ffa657" font-size="10" font-weight="bold">LDR</text>
+  <text x="385" y="143" text-anchor="middle" fill="#8b949e" font-size="9">Light Sensor</text>
+  <text x="385" y="154" text-anchor="middle" fill="#8b949e" font-size="9">Day / Night</text>
+
+  <!-- Wires from sensors down to Arduino -->
+  <line x1="105" y1="160" x2="105" y2="230" stroke="#79c0ff" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="245" y1="160" x2="245" y2="230" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="385" y1="160" x2="385" y2="230" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <!-- ══ ARDUINO UNO ══ -->
+  <rect x="60" y="230" width="380" height="90" rx="10" fill="#1c2128" stroke="#3fb950" stroke-width="2"/>
+  <text x="250" y="255" text-anchor="middle" fill="#3fb950" font-size="13" font-weight="bold">ARDUINO UNO R3</text>
+
+  <!-- AI Engine box inside Arduino -->
+  <rect x="80" y="265" width="160" height="42" rx="6" fill="#0d1117" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="160" y="282" text-anchor="middle" fill="#f0883e" font-size="9" font-weight="bold">AI DECISION ENGINE</text>
+  <text x="160" y="295" text-anchor="middle" fill="#8b949e" font-size="8">Fuzzy Logic Rule Set</text>
+  <text x="160" y="305" text-anchor="middle" fill="#8b949e" font-size="8">4-variable evaluation</text>
+
+  <!-- Sensor fusion label -->
+  <rect x="260" y="265" width="160" height="42" rx="6" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="340" y="282" text-anchor="middle" fill="#58a6ff" font-size="9" font-weight="bold">SENSOR FUSION</text>
+  <text x="340" y="295" text-anchor="middle" fill="#8b949e" font-size="8">ADC + 1-Wire + I2C</text>
+  <text x="340" y="305" text-anchor="middle" fill="#8b949e" font-size="8">2 second cycle</text>
+
+  <!-- ══ ACTUATORS ══ -->
+  <!-- Relay + Pump -->
+  <rect x="50" y="360" width="120" height="60" rx="8" fill="#1c2128" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="110" y="383" text-anchor="middle" fill="#f0883e" font-size="10" font-weight="bold">RELAY + PUMP</text>
+  <text x="110" y="396" text-anchor="middle" fill="#8b949e" font-size="8">Irrigation Control</text>
+  <text x="110" y="408" text-anchor="middle" fill="#8b949e" font-size="8">5s ON / cycle</text>
+
+  <!-- LCD -->
+  <rect x="200" y="360" width="100" height="60" rx="8" fill="#1c2128" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="250" y="383" text-anchor="middle" fill="#ffa657" font-size="10" font-weight="bold">LCD 16×2</text>
+  <text x="250" y="396" text-anchor="middle" fill="#8b949e" font-size="8">I2C Display</text>
+  <text x="250" y="408" text-anchor="middle" fill="#8b949e" font-size="8">Live readings</text>
+
+  <!-- LEDs + Buzzer -->
+  <rect x="325" y="360" width="115" height="60" rx="8" fill="#1c2128" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="382" y="380" text-anchor="middle" fill="#3fb950" font-size="10" font-weight="bold">LEDs + BUZZER</text>
+  <text x="382" y="393" text-anchor="middle" fill="#8b949e" font-size="8">Status indicators</text>
+  <text x="382" y="406" text-anchor="middle" fill="#8b949e" font-size="8">D9 / D10 / D11</text>
+
+  <!-- Wires down to actuators -->
+  <line x1="110" y1="320" x2="110" y2="360" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="250" y1="320" x2="250" y2="360" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="382" y1="320" x2="382" y2="360" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <!-- ══ OUTPUT / MONITORING ══ -->
+  <rect x="680" y="108" width="145" height="60" rx="8" fill="#1c2128" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="752" y="130" text-anchor="middle" fill="#58a6ff" font-size="10" font-weight="bold">SERIAL MONITOR</text>
+  <text x="752" y="144" text-anchor="middle" fill="#8b949e" font-size="8">9600 baud</text>
+  <text x="752" y="156" text-anchor="middle" fill="#8b949e" font-size="8">JSON data stream</text>
+
+  <rect x="680" y="195" width="145" height="60" rx="8" fill="#1c2128" stroke="#79c0ff" stroke-width="1.5"/>
+  <text x="752" y="217" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="bold">PYTHON DASHBOARD</text>
+  <text x="752" y="231" text-anchor="middle" fill="#8b949e" font-size="8">Matplotlib live plot</text>
+  <text x="752" y="243" text-anchor="middle" fill="#8b949e" font-size="8">serial_dashboard.py</text>
+
+  <!-- Wire from Arduino to output -->
+  <line x1="440" y1="270" x2="680" y2="138" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="680" y1="168" x2="680" y2="195" stroke="#58a6ff" stroke-width="1" stroke-dasharray="4,2"/>
+
+  <!-- Optional IoT -->
+  <rect x="680" y="285" width="145" height="60" rx="8" fill="#1c2128" stroke="#6e7681" stroke-width="1" stroke-dasharray="4"/>
+  <text x="752" y="307" text-anchor="middle" fill="#6e7681" font-size="10" font-weight="bold">IOT CLOUD</text>
+  <text x="752" y="320" text-anchor="middle" fill="#6e7681" font-size="8">(optional)</text>
+  <text x="752" y="333" text-anchor="middle" fill="#6e7681" font-size="8">ESP8266 / ThingSpeak</text>
+
+  <!-- Data flow arrow labels -->
+  <text x="125" y="200" fill="#8b949e" font-size="8">A0</text>
+  <text x="255" y="200" fill="#8b949e" font-size="8">D2</text>
+  <text x="390" y="200" fill="#8b949e" font-size="8">A1</text>
+
+  <!-- Footer -->
+  <text x="430" y="455" text-anchor="middle" fill="#6e7681" font-size="9">vaibhavjagtap1 / Arduino_Uno_100_Project — Project 001 of 100</text>
+</svg>
