@@ -272,4 +272,3 @@ Simple threshold rules create "bang-bang" control (on/off) which can cause pump 
 
 ---
 
-*Generated for vaibhavjagtap1 / Arduino_Uno_100_Project*
