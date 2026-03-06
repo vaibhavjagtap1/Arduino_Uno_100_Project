@@ -1,0 +1,36 @@
+# Components List — Project 001
+# AI-Based Smart Irrigation System using Arduino and Soil Analytics
+# ================================================================
+
+COMPONENT_ID | COMPONENT_NAME                        | QTY | SPECIFICATION                        | PURPOSE
+-------------|---------------------------------------|-----|--------------------------------------|----------------------------------
+C01          | Arduino Uno R3                        |  1  | ATmega328P, 5V, 16 MHz               | Main microcontroller
+C02          | Capacitive Soil Moisture Sensor       |  1  | 3.3–5V, 0–3V AOUT, no corrosion      | Measure soil water content
+C03          | DHT11 Temperature & Humidity Sensor   |  1  | 3–5V, ±2°C, ±5% RH, 1-wire          | Ambient temp & humidity
+C04          | LDR (Light Dependent Resistor)        |  1  | GL5516, 5–10 kΩ in light             | Detect day/night for scheduling
+C05          | 10 kΩ Resistor (for LDR divider)      |  2  | 1/4W Carbon film                     | Voltage divider & DHT pull-up
+C06          | 5V Single-Channel Relay Module        |  1  | 10A/250VAC, Opto-isolated            | Switch water pump on/off
+C07          | Submersible Mini Water Pump           |  1  | 3–6V DC, 0.5 L/min                   | Pump water to irrigation
+C08          | 16×2 LCD Display with I2C Backpack    |  1  | HD44780, I2C 0x27, 5V                | Display readings & pump status
+C09          | 5mm Green LED                         |  1  | 2.2V forward voltage                 | Pump ON indicator
+C10          | 5mm Red LED                           |  1  | 2.0V forward voltage                 | Pump OFF / alert indicator
+C11          | 220 Ω Resistor (for LEDs)             |  2  | 1/4W Carbon film                     | LED current limiting
+C12          | Piezo Buzzer (Active)                 |  1  | 5V, 2400 Hz                          | Audio alerts
+C13          | Breadboard (Half-size)                |  1  | 400 tie-point                        | Prototyping connections
+C14          | Jumper Wires (M-M, M-F)               | 30  | 20 cm                                | Wiring connections
+C15          | USB Cable Type-A to B                 |  1  | 1m, for Arduino                      | Power & serial programming
+C16          | 9V Battery or DC Adapter              |  1  | 9V 1A                                | Arduino power supply
+C17          | Silicone Tube (6mm ID)                |  30cm| Food-grade                          | Water delivery tubing
+C18          | Small Container / Water Reservoir     |  1  | ~500 mL                              | Water source for pump
+
+# OPTIONAL (for advanced features):
+C19          | ESP8266 Wi-Fi Module                  |  1  | AT firmware                          | IoT / cloud data logging
+C20          | DS3231 RTC Module                     |  1  | I2C, Battery-backed                  | Real-time scheduling
+
+# TOOLS NEEDED:
+# - Soldering iron (optional, for permanent build)
+# - Multimeter (for calibration)
+# - Small screwdrivers
+
+# ESTIMATED TOTAL COST (India): ₹600–900
+# ESTIMATED TOTAL COST (USD):   $8–12
