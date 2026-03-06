@@ -1,0 +1,12 @@
+{
+  "project": "Solar-Powered Autonomous Air Pollution Sampling Drone",
+  "category": "Aerospace Environmental",
+  "projectId": 74,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

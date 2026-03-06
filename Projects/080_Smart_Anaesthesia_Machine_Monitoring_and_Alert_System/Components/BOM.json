@@ -1,0 +1,12 @@
+{
+  "project": "Smart Anaesthesia Machine Monitoring and Alert System",
+  "category": "Healthcare Biomedical",
+  "projectId": 80,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

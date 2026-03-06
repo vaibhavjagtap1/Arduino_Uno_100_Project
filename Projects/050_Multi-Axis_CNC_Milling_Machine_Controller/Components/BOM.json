@@ -1,0 +1,12 @@
+{
+  "project": "Multi-Axis CNC Milling Machine Controller",
+  "category": "Industrial Automation",
+  "projectId": 50,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Vehicle-to-Grid Communication Protocol Simulator V2G",
+  "category": "EV Smart Grid",
+  "projectId": 56,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

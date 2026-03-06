@@ -1,0 +1,12 @@
+{
+  "project": "Environmental Data Logger",
+  "category": "Environmental Monitoring",
+  "projectId": 10,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

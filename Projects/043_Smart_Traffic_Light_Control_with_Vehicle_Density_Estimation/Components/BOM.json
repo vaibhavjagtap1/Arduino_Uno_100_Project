@@ -1,0 +1,12 @@
+{
+  "project": "Smart Traffic Light Control with Vehicle Density Estimation",
+  "category": "Smart City",
+  "projectId": 43,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

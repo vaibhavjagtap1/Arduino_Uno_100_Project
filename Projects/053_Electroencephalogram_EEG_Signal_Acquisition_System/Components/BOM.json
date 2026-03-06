@@ -1,0 +1,12 @@
+{
+  "project": "Electroencephalogram EEG Signal Acquisition System",
+  "category": "Healthcare Biomedical",
+  "projectId": 53,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

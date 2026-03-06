@@ -1,0 +1,12 @@
+{
+  "project": "Industrial Conveyor Belt Speed and Jam Detection System",
+  "category": "Industrial Automation",
+  "projectId": 88,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

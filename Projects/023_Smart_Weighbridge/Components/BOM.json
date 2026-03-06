@@ -1,0 +1,12 @@
+{
+  "project": "Smart Weighbridge",
+  "category": "Industrial Automation",
+  "projectId": 23,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

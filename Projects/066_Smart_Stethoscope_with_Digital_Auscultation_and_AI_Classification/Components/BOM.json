@@ -1,0 +1,12 @@
+{
+  "project": "Smart Stethoscope with Digital Auscultation and AI Classification",
+  "category": "Healthcare Biomedical",
+  "projectId": 66,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Smart Building Energy Management",
+  "category": "Smart City Energy",
+  "projectId": 12,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

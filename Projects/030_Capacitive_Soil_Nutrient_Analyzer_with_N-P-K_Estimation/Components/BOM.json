@@ -1,0 +1,12 @@
+{
+  "project": "Capacitive Soil Nutrient Analyzer with N-P-K Estimation",
+  "category": "Smart Agriculture",
+  "projectId": 30,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Automated Pest Detection",
+  "category": "Smart Agriculture",
+  "projectId": 15,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

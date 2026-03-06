@@ -1,0 +1,12 @@
+{
+  "project": "Voice-Controlled Home Automation using CNN Keyword Detection",
+  "category": "AI Home Automation",
+  "projectId": 46,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

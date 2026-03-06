@@ -1,0 +1,12 @@
+{
+  "project": "Smart Vertical Farm",
+  "category": "Smart Agriculture",
+  "projectId": 26,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

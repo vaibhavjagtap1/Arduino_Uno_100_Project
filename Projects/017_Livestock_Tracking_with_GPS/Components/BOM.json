@@ -1,0 +1,12 @@
+{
+  "project": "Livestock Tracking with GPS",
+  "category": "Smart Agriculture",
+  "projectId": 17,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

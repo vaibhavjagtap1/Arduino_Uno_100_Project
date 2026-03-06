@@ -1,0 +1,12 @@
+{
+  "project": "Smart Grid Demand Response Load Controller",
+  "category": "Smart Energy",
+  "projectId": 64,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

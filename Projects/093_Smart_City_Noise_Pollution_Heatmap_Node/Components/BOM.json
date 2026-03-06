@@ -1,0 +1,12 @@
+{
+  "project": "Smart City Noise Pollution Heatmap Node",
+  "category": "Environmental Monitoring",
+  "projectId": 93,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

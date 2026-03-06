@@ -1,0 +1,12 @@
+{
+  "project": "Piezoelectric Energy Harvesting Floor Tile Monitor",
+  "category": "Energy Harvesting",
+  "projectId": 35,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

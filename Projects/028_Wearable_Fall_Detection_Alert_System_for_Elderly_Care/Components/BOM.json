@@ -1,0 +1,12 @@
+{
+  "project": "Wearable Fall Detection Alert System for Elderly Care",
+  "category": "Healthcare IoT",
+  "projectId": 28,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

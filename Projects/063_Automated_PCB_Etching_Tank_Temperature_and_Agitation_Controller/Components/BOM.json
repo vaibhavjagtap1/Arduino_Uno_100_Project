@@ -1,0 +1,12 @@
+{
+  "project": "Automated PCB Etching Tank Temperature and Agitation Controller",
+  "category": "Industrial Automation",
+  "projectId": 63,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

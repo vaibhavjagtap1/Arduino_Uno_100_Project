@@ -1,0 +1,12 @@
+{
+  "project": "Warehouse Inventory Tracker with RFID and Handheld Scanner",
+  "category": "Industrial IoT",
+  "projectId": 92,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

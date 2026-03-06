@@ -1,0 +1,12 @@
+{
+  "project": "Structural Health Monitoring System for Bridges SHM",
+  "category": "Civil Engineering IoT",
+  "projectId": 36,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "IoT-Based Flood Level Monitoring and Siren System",
+  "category": "Environmental Safety",
+  "projectId": 90,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

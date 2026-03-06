@@ -1,0 +1,12 @@
+{
+  "project": "AI-Based Smart Irrigation System using Arduino and Soil Analytics",
+  "category": "Smart Agriculture IoT",
+  "projectId": 1,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

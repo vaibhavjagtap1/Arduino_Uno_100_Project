@@ -1,0 +1,12 @@
+{
+  "project": "Smart Irrigation Valve with NB-IoT Connectivity",
+  "category": "Smart Agriculture",
+  "projectId": 61,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

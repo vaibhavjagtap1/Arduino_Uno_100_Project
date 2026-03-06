@@ -1,0 +1,12 @@
+{
+  "project": "Wearable Posture Correction System using IMU",
+  "category": "Assistive Technology",
+  "projectId": 87,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

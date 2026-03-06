@@ -1,0 +1,12 @@
+{
+  "project": "Autonomous Greenhouse Rover with Computer Vision for Weed Detection",
+  "category": "Agri-Robotics",
+  "projectId": 55,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

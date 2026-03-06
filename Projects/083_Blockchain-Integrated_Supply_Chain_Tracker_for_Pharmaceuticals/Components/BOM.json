@@ -1,0 +1,12 @@
+{
+  "project": "Blockchain-Integrated Supply Chain Tracker for Pharmaceuticals",
+  "category": "Blockchain IoT",
+  "projectId": 83,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

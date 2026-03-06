@@ -1,0 +1,12 @@
+{
+  "project": "Smart Water Quality Monitoring Buoy",
+  "category": "Environmental IoT",
+  "projectId": 6,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Industrial Predictive Maintenance System using Vibration Analysis",
+  "category": "Industrial Automation IoT",
+  "projectId": 2,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

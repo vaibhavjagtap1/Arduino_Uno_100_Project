@@ -1,0 +1,12 @@
+{
+  "project": "Autonomous Line-Following Robot with Obstacle Avoidance and PID Control",
+  "category": "Robotics Embedded Control",
+  "projectId": 4,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

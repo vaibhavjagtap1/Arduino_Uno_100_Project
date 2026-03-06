@@ -1,0 +1,12 @@
+{
+  "project": "Magnetic Levitation Display System with PID Height Control",
+  "category": "Advanced Electronics",
+  "projectId": 49,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

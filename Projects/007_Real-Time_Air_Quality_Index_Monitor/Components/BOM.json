@@ -1,0 +1,12 @@
+{
+  "project": "Real-Time Air Quality Index Monitor",
+  "category": "Environmental IoT",
+  "projectId": 7,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

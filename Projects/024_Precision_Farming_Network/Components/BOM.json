@@ -1,0 +1,12 @@
+{
+  "project": "Precision Farming Network",
+  "category": "Smart Agriculture",
+  "projectId": 24,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

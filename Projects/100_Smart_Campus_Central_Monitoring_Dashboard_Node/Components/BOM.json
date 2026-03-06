@@ -1,0 +1,12 @@
+{
+  "project": "Smart Campus Central Monitoring Dashboard Node",
+  "category": "Smart City IoT",
+  "projectId": 100,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

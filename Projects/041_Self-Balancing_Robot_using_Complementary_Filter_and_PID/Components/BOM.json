@@ -1,0 +1,12 @@
+{
+  "project": "Self-Balancing Robot using Complementary Filter and PID",
+  "category": "Robotics",
+  "projectId": 41,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

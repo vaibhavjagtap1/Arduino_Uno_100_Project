@@ -1,0 +1,12 @@
+{
+  "project": "Machine Vision Object Sorting Conveyor with Color Detection",
+  "category": "Industrial Automation",
+  "projectId": 34,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

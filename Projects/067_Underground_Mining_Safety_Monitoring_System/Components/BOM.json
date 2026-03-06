@@ -1,0 +1,12 @@
+{
+  "project": "Underground Mining Safety Monitoring System",
+  "category": "Industrial Safety",
+  "projectId": 67,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "project": "Water Leakage Detection System in Building Pipelines",
+  "category": "Smart Building",
+  "projectId": 47,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

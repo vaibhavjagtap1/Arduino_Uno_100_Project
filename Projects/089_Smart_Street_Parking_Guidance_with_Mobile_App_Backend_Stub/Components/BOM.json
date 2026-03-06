@@ -1,0 +1,12 @@
+{
+  "project": "Smart Street Parking Guidance with Mobile App Backend Stub",
+  "category": "Smart City",
+  "projectId": 89,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

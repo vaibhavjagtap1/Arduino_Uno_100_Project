@@ -1,0 +1,12 @@
+{
+  "project": "Factory Floor Occupancy Counter with Thermal Imaging Array",
+  "category": "Industrial IoT",
+  "projectId": 31,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

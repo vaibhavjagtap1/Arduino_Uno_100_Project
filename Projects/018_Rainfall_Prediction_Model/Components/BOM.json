@@ -1,0 +1,12 @@
+{
+  "project": "Rainfall Prediction Model",
+  "category": "Smart Agriculture",
+  "projectId": 18,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

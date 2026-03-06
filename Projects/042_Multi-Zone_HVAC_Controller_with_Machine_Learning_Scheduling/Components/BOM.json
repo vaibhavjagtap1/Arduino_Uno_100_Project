@@ -1,0 +1,12 @@
+{
+  "project": "Multi-Zone HVAC Controller with Machine Learning Scheduling",
+  "category": "Building Automation",
+  "projectId": 42,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

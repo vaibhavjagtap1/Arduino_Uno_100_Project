@@ -1,0 +1,12 @@
+{
+  "project": "Smart Cold Chain Monitoring System for Pharmaceutical Logistics",
+  "category": "Healthcare IoT",
+  "projectId": 72,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

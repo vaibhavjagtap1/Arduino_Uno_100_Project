@@ -1,0 +1,12 @@
+{
+  "project": "Anti-Drone Frequency Jammer Detection System",
+  "category": "Industrial Safety",
+  "projectId": 48,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

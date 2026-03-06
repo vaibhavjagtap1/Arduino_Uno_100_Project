@@ -1,0 +1,12 @@
+{
+  "project": "Helmet-Mounted Head-Up Display HUD Prototype",
+  "category": "Aerospace / Automotive",
+  "projectId": 99,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

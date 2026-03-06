@@ -1,0 +1,12 @@
+{
+  "project": "High-Power LED Grow Light Controller with Spectrum Tuning",
+  "category": "Smart Agriculture",
+  "projectId": 82,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}

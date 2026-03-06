@@ -1,0 +1,12 @@
+{
+  "project": "Real-Time Drowning Detection System for Swimming Pools",
+  "category": "Safety IoT",
+  "projectId": 68,
+  "components": [
+    {
+      "name": "Arduino Board",
+      "quantity": 1,
+      "cost": 500
+    }
+  ]
+}
