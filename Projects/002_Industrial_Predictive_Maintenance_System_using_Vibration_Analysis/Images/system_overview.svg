@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" font-family="'Courier New', monospace">
+  <rect width="900" height="500" fill="#0d1117" rx="12"/>
+  <rect x="10" y="10" width="880" height="480" fill="#161b22" rx="10" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="450" y="42" text-anchor="middle" fill="#58a6ff" font-size="15" font-weight="bold">Project 002 — System Architecture Overview</text>
+  <line x1="50" y1="52" x2="850" y2="52" stroke="#30363d" stroke-width="1"/>
+
+  <!-- ── LAYER LABELS ── -->
+  <text x="50" y="100" fill="#6e7681" font-size="10" font-weight="bold">SENSOR LAYER</text>
+  <text x="50" y="228" fill="#6e7681" font-size="10" font-weight="bold">PROCESSING LAYER</text>
+  <text x="50" y="358" fill="#6e7681" font-size="10" font-weight="bold">ACTUATOR LAYER</text>
+  <text x="700" y="100" fill="#6e7681" font-size="10" font-weight="bold">OUTPUT LAYER</text>
+
+  <!-- ══ SENSORS ══ -->
+  <!-- ADXL345 -->
+  <rect x="50" y="108" width="130" height="60" rx="8" fill="#1c2128" stroke="#79c0ff" stroke-width="1.5"/>
+  <text x="115" y="129" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="bold">ADXL345</text>
+  <text x="115" y="143" text-anchor="middle" fill="#8b949e" font-size="9">3-Axis I2C</text>
+  <text x="115" y="155" text-anchor="middle" fill="#8b949e" font-size="9">±16g / 200 Hz</text>
+
+  <!-- DS18B20 -->
+  <rect x="210" y="108" width="130" height="60" rx="8" fill="#1c2128" stroke="#ff7b72" stroke-width="1.5"/>
+  <text x="275" y="129" text-anchor="middle" fill="#ff7b72" font-size="10" font-weight="bold">DS18B20</text>
+  <text x="275" y="143" text-anchor="middle" fill="#8b949e" font-size="9">1-Wire Temp</text>
+  <text x="275" y="155" text-anchor="middle" fill="#8b949e" font-size="9">±0.5°C Bearing</text>
+
+  <!-- Wires from sensors down to Arduino -->
+  <line x1="115" y1="168" x2="115" y2="238" stroke="#79c0ff" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="275" y1="168" x2="275" y2="238" stroke="#ff7b72" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <!-- Pin labels on wires -->
+  <text x="120" y="208" fill="#8b949e" font-size="8">I2C</text>
+  <text x="280" y="208" fill="#8b949e" font-size="8">D3</text>
+
+  <!-- ══ ARDUINO UNO ══ -->
+  <rect x="50" y="238" width="400" height="100" rx="10" fill="#1c2128" stroke="#3fb950" stroke-width="2"/>
+  <text x="250" y="260" text-anchor="middle" fill="#3fb950" font-size="13" font-weight="bold">ARDUINO UNO R3</text>
+
+  <!-- RMS Engine box inside Arduino -->
+  <rect x="70" y="272" width="175" height="52" rx="6" fill="#0d1117" stroke="#79c0ff" stroke-width="1.5"/>
+  <text x="157" y="289" text-anchor="middle" fill="#79c0ff" font-size="9" font-weight="bold">RMS ENGINE</text>
+  <text x="157" y="302" text-anchor="middle" fill="#8b949e" font-size="8">100 samples × 200 Hz</text>
+  <text x="157" y="313" text-anchor="middle" fill="#8b949e" font-size="8">Integer math — no FFT lib</text>
+
+  <!-- State Classifier box inside Arduino -->
+  <rect x="260" y="272" width="175" height="52" rx="6" fill="#0d1117" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="347" y="289" text-anchor="middle" fill="#f0883e" font-size="9" font-weight="bold">STATE CLASSIFIER</text>
+  <text x="347" y="302" text-anchor="middle" fill="#8b949e" font-size="8">NORMAL / WARNING</text>
+  <text x="347" y="313" text-anchor="middle" fill="#8b949e" font-size="8">CRITICAL + Temp check</text>
+
+  <!-- ══ ACTUATORS ══ -->
+  <!-- Relay + Shutdown -->
+  <rect x="50" y="368" width="110" height="60" rx="8" fill="#1c2128" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="105" y="388" text-anchor="middle" fill="#f0883e" font-size="10" font-weight="bold">RELAY</text>
+  <text x="105" y="401" text-anchor="middle" fill="#8b949e" font-size="8">Machine Shutdown</text>
+  <text x="105" y="413" text-anchor="middle" fill="#8b949e" font-size="8">CRITICAL only — D7</text>
+
+  <!-- LCD -->
+  <rect x="180" y="368" width="100" height="60" rx="8" fill="#1c2128" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="230" y="388" text-anchor="middle" fill="#ffa657" font-size="10" font-weight="bold">LCD 16×2</text>
+  <text x="230" y="401" text-anchor="middle" fill="#8b949e" font-size="8">I2C Display</text>
+  <text x="230" y="413" text-anchor="middle" fill="#8b949e" font-size="8">RMS + State</text>
+
+  <!-- LEDs + Buzzer -->
+  <rect x="300" y="368" width="150" height="60" rx="8" fill="#1c2128" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="375" y="386" text-anchor="middle" fill="#3fb950" font-size="9" font-weight="bold">LEDs + BUZZER</text>
+  <text x="375" y="399" text-anchor="middle" fill="#8b949e" font-size="8">🟢 D9  🟡 D10  🔴 D11</text>
+  <text x="375" y="412" text-anchor="middle" fill="#8b949e" font-size="8">Buzzer D12</text>
+
+  <!-- Wires down to actuators -->
+  <line x1="105" y1="338" x2="105" y2="368" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="230" y1="338" x2="230" y2="368" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <line x1="375" y1="338" x2="375" y2="368" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <!-- ══ OUTPUT / MONITORING ══ -->
+  <rect x="690" y="108" width="155" height="65" rx="8" fill="#1c2128" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="767" y="130" text-anchor="middle" fill="#58a6ff" font-size="10" font-weight="bold">SERIAL MONITOR</text>
+  <text x="767" y="144" text-anchor="middle" fill="#8b949e" font-size="8">9600 baud</text>
+  <text x="767" y="157" text-anchor="middle" fill="#8b949e" font-size="8">JSON: ax/ay/az/rms/state</text>
+
+  <rect x="690" y="200" width="155" height="65" rx="8" fill="#1c2128" stroke="#79c0ff" stroke-width="1.5"/>
+  <text x="767" y="222" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="bold">PYTHON DASHBOARD</text>
+  <text x="767" y="236" text-anchor="middle" fill="#8b949e" font-size="8">Matplotlib live plot</text>
+  <text x="767" y="249" text-anchor="middle" fill="#8b949e" font-size="8">serial_dashboard.py</text>
+
+  <!-- Wire from Arduino to output -->
+  <line x1="450" y1="280" x2="690" y2="140" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="690" y1="173" x2="690" y2="200" stroke="#58a6ff" stroke-width="1" stroke-dasharray="4,2"/>
+
+  <!-- Optional IoT -->
+  <rect x="690" y="295" width="155" height="65" rx="8" fill="#1c2128" stroke="#6e7681" stroke-width="1" stroke-dasharray="4"/>
+  <text x="767" y="318" text-anchor="middle" fill="#6e7681" font-size="10" font-weight="bold">IOT CLOUD</text>
+  <text x="767" y="331" text-anchor="middle" fill="#6e7681" font-size="8">(optional)</text>
+  <text x="767" y="344" text-anchor="middle" fill="#6e7681" font-size="8">MQTT / InfluxDB</text>
+  <line x1="690" y1="265" x2="690" y2="295" stroke="#6e7681" stroke-width="1" stroke-dasharray="4,2"/>
+
+  <!-- Footer -->
+  <text x="450" y="472" text-anchor="middle" fill="#6e7681" font-size="9">vaibhavjagtap1 / Arduino_Uno_100_Project — Project 002 of 100</text>
+</svg>

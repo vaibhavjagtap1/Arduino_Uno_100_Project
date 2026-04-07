@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 650" width="960" height="650" font-family="'Courier New', monospace">
+  <!-- Background -->
+  <rect width="960" height="650" fill="#0d1117" rx="12"/>
+  <rect x="10" y="10" width="940" height="630" fill="#161b22" rx="10" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="480" y="40" text-anchor="middle" fill="#58a6ff" font-size="15" font-weight="bold">Project 002 — Industrial Predictive Maintenance System — Circuit Diagram</text>
+  <line x1="50" y1="52" x2="910" y2="52" stroke="#30363d" stroke-width="1"/>
+
+  <!-- ══ ARDUINO UNO ══ -->
+  <rect x="340" y="190" width="210" height="310" fill="#1c2128" rx="8" stroke="#3fb950" stroke-width="2"/>
+  <text x="445" y="212" text-anchor="middle" fill="#3fb950" font-size="12" font-weight="bold">ARDUINO UNO</text>
+
+  <!-- Left side pins (Digital) -->
+  <text x="348" y="245" fill="#8b949e" font-size="9">D3</text>
+  <text x="348" y="265" fill="#8b949e" font-size="9">D7</text>
+  <text x="348" y="285" fill="#8b949e" font-size="9">D9</text>
+  <text x="348" y="305" fill="#8b949e" font-size="9">D10</text>
+  <text x="348" y="325" fill="#8b949e" font-size="9">D11</text>
+  <text x="348" y="345" fill="#8b949e" font-size="9">D12</text>
+  <text x="348" y="375" fill="#8b949e" font-size="9">A4</text>
+  <text x="348" y="395" fill="#8b949e" font-size="9">A5</text>
+  <text x="348" y="465" fill="#8b949e" font-size="9">GND</text>
+  <text x="348" y="485" fill="#8b949e" font-size="9">5V</text>
+
+  <!-- Pin dots left -->
+  <circle cx="340" cy="242" r="4" fill="#ffa657"/>
+  <circle cx="340" cy="262" r="4" fill="#f0883e"/>
+  <circle cx="340" cy="282" r="4" fill="#3fb950"/>
+  <circle cx="340" cy="302" r="4" fill="#e3b341"/>
+  <circle cx="340" cy="322" r="4" fill="#f85149"/>
+  <circle cx="340" cy="342" r="4" fill="#f0883e"/>
+  <circle cx="340" cy="372" r="4" fill="#58a6ff"/>
+  <circle cx="340" cy="392" r="4" fill="#58a6ff"/>
+  <circle cx="340" cy="462" r="4" fill="#6e7681"/>
+  <circle cx="340" cy="482" r="4" fill="#ff7b72"/>
+
+  <!-- Right side pins (I2C / Power) -->
+  <text x="557" y="375" fill="#8b949e" font-size="9">A4/SDA</text>
+  <text x="557" y="395" fill="#8b949e" font-size="9">A5/SCL</text>
+  <text x="557" y="465" fill="#8b949e" font-size="9">GND</text>
+  <text x="557" y="485" fill="#8b949e" font-size="9">5V</text>
+
+  <circle cx="550" cy="372" r="4" fill="#58a6ff"/>
+  <circle cx="550" cy="392" r="4" fill="#58a6ff"/>
+  <circle cx="550" cy="462" r="4" fill="#6e7681"/>
+  <circle cx="550" cy="482" r="4" fill="#ff7b72"/>
+
+  <!-- ══ ADXL345 ACCELEROMETER ══ -->
+  <rect x="620" y="70" width="145" height="90" fill="#1c2128" rx="6" stroke="#79c0ff" stroke-width="1.5"/>
+  <text x="692" y="94" text-anchor="middle" fill="#79c0ff" font-size="10" font-weight="bold">ADXL345</text>
+  <text x="692" y="108" text-anchor="middle" fill="#79c0ff" font-size="10">ACCELEROMETER</text>
+  <text x="630" y="124" fill="#8b949e" font-size="8">VCC → 3.3V/5V</text>
+  <text x="630" y="136" fill="#8b949e" font-size="8">GND → GND</text>
+  <text x="630" y="148" fill="#8b949e" font-size="8">SDA → A4</text>
+  <text x="630" y="160" fill="#8b949e" font-size="8">SCL → A5</text>
+  <!-- Wire SDA from Arduino A4 right to ADXL SDA -->
+  <polyline points="550,372 600,372 600,140 620,140" fill="none" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="620" cy="140" r="3" fill="#58a6ff"/>
+  <!-- Wire SCL from Arduino A5 right to ADXL SCL -->
+  <polyline points="550,392 610,392 610,155 620,155" fill="none" stroke="#58a6ff" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="620" cy="155" r="3" fill="#58a6ff"/>
+
+  <!-- ══ DS18B20 TEMPERATURE SENSOR ══ -->
+  <rect x="620" y="200" width="145" height="80" fill="#1c2128" rx="6" stroke="#ff7b72" stroke-width="1.5"/>
+  <text x="692" y="222" text-anchor="middle" fill="#ff7b72" font-size="10" font-weight="bold">DS18B20</text>
+  <text x="692" y="236" text-anchor="middle" fill="#ff7b72" font-size="9">Temperature</text>
+  <text x="630" y="252" fill="#8b949e" font-size="8">VDD → 5V</text>
+  <text x="630" y="264" fill="#8b949e" font-size="8">GND → GND</text>
+  <text x="630" y="276" fill="#8b949e" font-size="8">DQ  → D3 (1-Wire)</text>
+  <!-- Wire: D3 to DS18B20 DQ -->
+  <polyline points="340,242 290,242 290,263 620,263" fill="none" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="620" cy="263" r="3" fill="#ffa657"/>
+  <!-- 4.7kΩ pull-up resistor symbol -->
+  <rect x="580" y="230" width="30" height="12" fill="none" stroke="#8b949e" stroke-width="1.5" rx="2"/>
+  <text x="595" y="226" text-anchor="middle" fill="#8b949e" font-size="7">4.7kΩ</text>
+  <line x1="610" y1="236" x2="620" y2="236" stroke="#8b949e" stroke-width="1.2"/>
+  <text x="592" y="222" text-anchor="middle" fill="#8b949e" font-size="7">5V pull-up</text>
+
+  <!-- ══ RELAY MODULE ══ -->
+  <rect x="90" y="160" width="140" height="90" fill="#1c2128" rx="6" stroke="#f0883e" stroke-width="1.5"/>
+  <text x="160" y="182" text-anchor="middle" fill="#f0883e" font-size="11" font-weight="bold">RELAY MODULE</text>
+  <text x="160" y="196" text-anchor="middle" fill="#f0883e" font-size="9">5V Single Channel</text>
+  <text x="100" y="213" fill="#8b949e" font-size="8">IN  ← D7</text>
+  <text x="100" y="225" fill="#8b949e" font-size="8">VCC ← 5V</text>
+  <text x="100" y="237" fill="#8b949e" font-size="8">GND ← GND</text>
+  <!-- Wire: D7 to relay IN -->
+  <polyline points="340,262 280,262 280,208 230,208" fill="none" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="230" cy="208" r="3" fill="#f0883e"/>
+
+  <!-- Machine label below relay -->
+  <rect x="90" y="270" width="140" height="40" fill="#1c2128" rx="6" stroke="#6e7681" stroke-width="1" stroke-dasharray="5"/>
+  <text x="160" y="289" text-anchor="middle" fill="#6e7681" font-size="9" font-weight="bold">MACHINE SHUTDOWN</text>
+  <text x="160" y="302" text-anchor="middle" fill="#6e7681" font-size="8">(COM/NO terminals)</text>
+  <line x1="160" y1="250" x2="160" y2="270" stroke="#f0883e" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <!-- ══ LEDs ══ -->
+  <!-- Green LED D9 -->
+  <circle cx="140" cy="370" r="16" fill="#1c2128" stroke="#3fb950" stroke-width="1.8"/>
+  <text x="140" y="368" text-anchor="middle" fill="#3fb950" font-size="9" font-weight="bold">LED</text>
+  <text x="140" y="379" text-anchor="middle" fill="#3fb950" font-size="8">GRN</text>
+  <text x="140" y="393" text-anchor="middle" fill="#8b949e" font-size="7">D9</text>
+  <!-- 220Ω resistor symbol on wire -->
+  <rect x="190" y="364" width="26" height="12" fill="none" stroke="#8b949e" stroke-width="1.2" rx="2"/>
+  <text x="203" y="360" text-anchor="middle" fill="#8b949e" font-size="7">220Ω</text>
+  <polyline points="340,282 300,282 300,370 216,370" fill="none" stroke="#3fb950" stroke-width="1.3" stroke-dasharray="4,2"/>
+  <line x1="190" y1="370" x2="156" y2="370" stroke="#3fb950" stroke-width="1.3"/>
+
+  <!-- Yellow LED D10 -->
+  <circle cx="140" cy="420" r="16" fill="#1c2128" stroke="#e3b341" stroke-width="1.8"/>
+  <text x="140" y="418" text-anchor="middle" fill="#e3b341" font-size="9" font-weight="bold">LED</text>
+  <text x="140" y="429" text-anchor="middle" fill="#e3b341" font-size="8">YLW</text>
+  <text x="140" y="443" text-anchor="middle" fill="#8b949e" font-size="7">D10</text>
+  <rect x="190" y="414" width="26" height="12" fill="none" stroke="#8b949e" stroke-width="1.2" rx="2"/>
+  <text x="203" y="410" text-anchor="middle" fill="#8b949e" font-size="7">220Ω</text>
+  <polyline points="340,302 310,302 310,420 216,420" fill="none" stroke="#e3b341" stroke-width="1.3" stroke-dasharray="4,2"/>
+  <line x1="190" y1="420" x2="156" y2="420" stroke="#e3b341" stroke-width="1.3"/>
+
+  <!-- Red LED D11 -->
+  <circle cx="140" cy="470" r="16" fill="#1c2128" stroke="#f85149" stroke-width="1.8"/>
+  <text x="140" y="468" text-anchor="middle" fill="#f85149" font-size="9" font-weight="bold">LED</text>
+  <text x="140" y="479" text-anchor="middle" fill="#f85149" font-size="8">RED</text>
+  <text x="140" y="493" text-anchor="middle" fill="#8b949e" font-size="7">D11</text>
+  <rect x="190" y="464" width="26" height="12" fill="none" stroke="#8b949e" stroke-width="1.2" rx="2"/>
+  <text x="203" y="460" text-anchor="middle" fill="#8b949e" font-size="7">220Ω</text>
+  <polyline points="340,322 320,322 320,470 216,470" fill="none" stroke="#f85149" stroke-width="1.3" stroke-dasharray="4,2"/>
+  <line x1="190" y1="470" x2="156" y2="470" stroke="#f85149" stroke-width="1.3"/>
+
+  <!-- ══ BUZZER ══ -->
+  <circle cx="270" cy="400" r="20" fill="#1c2128" stroke="#f0883e" stroke-width="1.8"/>
+  <text x="270" y="396" text-anchor="middle" fill="#f0883e" font-size="9" font-weight="bold">BZR</text>
+  <text x="270" y="408" text-anchor="middle" fill="#f0883e" font-size="8">D12</text>
+  <polyline points="340,342 330,342 330,400 290,400" fill="none" stroke="#f0883e" stroke-width="1.3" stroke-dasharray="4,2"/>
+
+  <!-- ══ LCD 16×2 I2C ══ -->
+  <rect x="90" y="520" width="170" height="85" fill="#1c2128" rx="6" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="175" y="540" text-anchor="middle" fill="#ffa657" font-size="11" font-weight="bold">LCD 16×2</text>
+  <text x="175" y="554" text-anchor="middle" fill="#ffa657" font-size="9">(I2C 0x27)</text>
+  <text x="100" y="570" fill="#8b949e" font-size="8">VCC → 5V</text>
+  <text x="100" y="582" fill="#8b949e" font-size="8">GND → GND</text>
+  <text x="100" y="594" fill="#8b949e" font-size="8">SDA → A4</text>
+  <text x="100" y="606" fill="#8b949e" font-size="8">SCL → A5</text>
+  <!-- Wire SDA: Arduino A4 left → LCD SDA (shared I2C bus) -->
+  <polyline points="340,372 270,372 270,570 260,570" fill="none" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="260" cy="570" r="3" fill="#ffa657"/>
+  <!-- Wire SCL: Arduino A5 left → LCD SCL -->
+  <polyline points="340,392 260,392 260,582 260,582" fill="none" stroke="#ffa657" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <circle cx="260" cy="582" r="3" fill="#ffa657"/>
+
+  <!-- ══ POWER SUPPLY ══ -->
+  <rect x="390" y="560" width="130" height="40" fill="#1c2128" rx="6" stroke="#ff7b72" stroke-width="1.5"/>
+  <text x="455" y="580" text-anchor="middle" fill="#ff7b72" font-size="10" font-weight="bold">USB / 9V DC</text>
+  <text x="455" y="593" text-anchor="middle" fill="#8b949e" font-size="8">Power Supply</text>
+
+  <!-- ══ LEGEND ══ -->
+  <rect x="690" y="340" width="220" height="180" fill="#1c2128" rx="6" stroke="#30363d" stroke-width="1"/>
+  <text x="800" y="360" text-anchor="middle" fill="#8b949e" font-size="11" font-weight="bold">LEGEND</text>
+  <line x1="705" y1="375" x2="740" y2="375" stroke="#58a6ff" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="750" y="379" fill="#58a6ff" font-size="9">I2C bus (SDA/SCL)</text>
+  <line x1="705" y1="395" x2="740" y2="395" stroke="#ffa657" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="750" y="399" fill="#ffa657" font-size="9">1-Wire / DS18B20</text>
+  <line x1="705" y1="415" x2="740" y2="415" stroke="#f0883e" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="750" y="419" fill="#f0883e" font-size="9">Control signal</text>
+  <line x1="705" y1="435" x2="740" y2="435" stroke="#3fb950" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="750" y="439" fill="#3fb950" font-size="9">Normal LED (D9)</text>
+  <line x1="705" y1="455" x2="740" y2="455" stroke="#e3b341" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="750" y="459" fill="#e3b341" font-size="9">Warning LED (D10)</text>
+  <line x1="705" y1="475" x2="740" y2="475" stroke="#f85149" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="750" y="479" fill="#f85149" font-size="9">Critical LED (D11)</text>
+  <line x1="705" y1="495" x2="740" y2="495" stroke="#ff7b72" stroke-width="2"/>
+  <text x="750" y="499" fill="#ff7b72" font-size="9">Power rail</text>
+
+  <!-- Note -->
+  <text x="480" y="638" text-anchor="middle" fill="#6e7681" font-size="9">* ADXL345 and LCD share I2C bus (A4/A5). DS18B20 requires 4.7kΩ pull-up from DQ to 5V. Each LED uses 220Ω series resistor.</text>
+</svg>
