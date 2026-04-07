@@ -123,7 +123,7 @@ byte arrowRight[8]= {0x00,0x04,0x02,0x1F,0x02,0x04,0x00,0x00};
 // ─────────────────────────────────────────────────────────────
 //  ISR: button pressed → set flag
 // ─────────────────────────────────────────────────────────────
-void IRAM_ATTR buttonISR() {
+void buttonISR() {
   measureFlag = true;
 }
 
