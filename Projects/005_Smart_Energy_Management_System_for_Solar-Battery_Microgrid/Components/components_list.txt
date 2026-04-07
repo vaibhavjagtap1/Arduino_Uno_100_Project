@@ -1,0 +1,47 @@
+# Components List — Project 005
+# Smart Energy Management System for Solar-Battery Microgrid
+# ===========================================================
+
+COMPONENT_ID | COMPONENT_NAME                        | QTY | SPECIFICATION                              | PURPOSE
+-------------|---------------------------------------|-----|--------------------------------------------|----------------------------------
+C01          | Arduino Uno R3                        |  1  | ATmega328P, 5V, 16 MHz                     | Main microcontroller
+C02          | INA219 Current/Power Sensor Module    |  3  | I2C, ±3.2A, 26V max, 12-bit               | Solar/Battery/Load power monitoring
+C03          | Solar Panel                           |  1  | 12V 20W, open-circuit ~21V                 | Primary renewable energy source
+C04          | 12V Sealed Lead-Acid Battery          |  1  | 12V 7Ah SLA or 3S 18650 Li-ion pack        | Energy storage
+C05          | IRFZ44N N-Channel MOSFET              |  1  | 55V, 49A, TO-220                           | MPPT PWM switching element
+C06          | Inductor                              |  1  | 100 µH, 5A, ferrite core                   | Buck/boost MPPT converter filter
+C07          | Schottky Diode (1N5822 or SS34)       |  1  | 3A, 40V, low forward drop                  | Freewheeling / reverse blocking
+C08          | Electrolytic Capacitor                |  2  | 1000 µF / 25V                              | Input/output filter capacitors
+C09          | 4-Channel Relay Module (5V)           |  1  | 10A/250VAC, opto-isolated                  | Priority-based load switching
+C10          | 16×2 LCD Display with I2C Backpack    |  1  | HD44780, I2C 0x27, 5V                     | Live readings display
+C11          | 5mm Green LED                         |  1  | 2.2V forward voltage                       | Charging active indicator
+C12          | 5mm Red LED                           |  1  | 2.0V forward voltage                       | Battery low alert
+C13          | Piezo Buzzer (Active)                 |  1  | 5V, 2400 Hz                                | Critical SOC warning
+C14          | Resistor 100 kΩ                       |  1  | 1/4W Carbon film                           | Battery voltage divider (upper)
+C15          | Resistor 47 kΩ                        |  1  | 1/4W Carbon film                           | Battery voltage divider (lower)
+C16          | Resistor 10 kΩ                        |  1  | 1/4W Carbon film                           | MOSFET gate pull-down
+C17          | Resistor 220 Ω                        |  2  | 1/4W Carbon film                           | LED current limiting
+C18          | Terminal Block (2-pin screw)          |  6  | 5.08 mm pitch, 10A                         | Solar/battery/load wire connections
+C19          | Heatsink for MOSFET                   |  1  | TO-220 clip-on, ≥10°C/W                    | Thermal management for MOSFET
+C20          | Inline Fuse Holder + 5A Fuse          |  2  | Panel-mount, 5×20 mm                       | Overcurrent protection
+C21          | Breadboard (Full-size)                |  1  | 830 tie-point                              | Prototyping circuit connections
+C22          | Jumper Wires (M-M, M-F)               | 40  | 20 cm                                      | Inter-component wiring
+C23          | USB Cable Type-A to B                 |  1  | 1m                                         | Arduino programming & debug serial
+C24          | DC-DC Buck Module (LM2596)            |  1  | In: 4–40V, Out: 1.25–37V, 3A               | Regulated 5V rail for Arduino
+C25          | Alligator Clip Test Leads             |  4  | Silicone, 30V                              | Solar panel & battery connections
+
+# OPTIONAL (for expanded features):
+C26          | ESP8266 Wi-Fi Module                  |  1  | AT firmware                                | Cloud data upload / remote monitoring
+C27          | DS3231 RTC Module                     |  1  | I2C, ±2 ppm accuracy                       | Time-stamped energy logging
+C28          | MicroSD Card Module                   |  1  | SPI, FAT32                                 | Local data logging to CSV
+C29          | 0.1 Ω 1W Shunt Resistor               |  3  | Wirewound, ±1%                             | External shunts for INA219 accuracy
+C30          | 7-Segment or OLED 128×64              |  1  | I2C SSD1306                                | Larger / graphical display upgrade
+
+# TOOLS NEEDED:
+# - Soldering iron + solder (for wiring terminal blocks & MOSFET heatsink)
+# - Multimeter (for calibration and voltage divider verification)
+# - Oscilloscope (optional, for MPPT PWM waveform inspection)
+# - Screwdrivers, wire stripper, heat-shrink tubing
+
+# ESTIMATED TOTAL COST (India): ₹2500–4000  (solar panel accounts for ~₹800–1500)
+# ESTIMATED TOTAL COST (USD):   $35–55
