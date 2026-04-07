@@ -238,7 +238,7 @@ Set `CRITICAL_THRESHOLD` to approximately **5–7× the baseline** RMS:
 | Small motors (<15 kW)  | < 2.8 mm/s | 2.8–7.1 mm/s | > 7.1 mm/s |
 | Medium machines        | < 4.5 mm/s | 4.5–11.2 mm/s | > 11.2 mm/s |
 
-> **Note:** The sketch uses m/s² (acceleration) rather than mm/s (velocity). Convert using: `velocity (mm/s) ≈ RMS_accel (m/s²) / (2π × dominant_freq_Hz) × 1000`
+> **Note:** The sketch uses m/s² (acceleration) rather than mm/s (velocity). The conversion requires knowledge of the dominant vibration frequency: `velocity (mm/s) ≈ RMS_accel (m/s²) / (2π × dominant_freq_Hz) × 1000`. Since the current version does not perform frequency analysis (no FFT), use the m/s² thresholds directly and adjust them by baseline testing. FFT-based frequency classification is listed in Future Enhancements.
 
 ### LCD I2C Address
 If LCD is blank after upload:

@@ -154,9 +154,6 @@ def build_dashboard(port: str) -> None:
         ax_rms.axhline(3.0, color="#e3b341", linewidth=1.0, linestyle="--")
         ax_rms.axhline(7.0, color="#f85149", linewidth=1.0, linestyle="--")
         if xs:
-            rms_colors = [STATE_COLOURS.get(
-                "CRITICAL" if v >= 7.0 else "WARNING" if v >= 3.0 else "NORMAL",
-                "#3fb950") for v in _rms]
             ax_rms.plot(xs, _rms, color=state_col, linewidth=2, label="RMS")
             ax_rms.fill_between(xs, _rms, alpha=0.2, color=state_col)
         ax_rms.set_ylim(0, max(15.0, max(_rms) * 1.2) if _rms else 15.0)

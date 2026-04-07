@@ -80,8 +80,12 @@ float         rmsValue      = 0.0f;
 float         bearingTemp   = 25.0f;
 int16_t       ax_raw        = 0, ay_raw = 0, az_raw = 0;
 MachineState  machineState  = NORMAL;
+MachineState  lastLcdState  = NORMAL;   // track state changes for LCD refresh
 unsigned long lastLcdUpdate = 0;
 unsigned long lastTempRead  = 0;
+// Non-blocking buzzer state for CRITICAL alarm pattern
+unsigned long buzzerStepTime = 0;
+uint8_t       buzzerStep     = 0;
 
 // ── Function Prototypes ──────────────────────────────────────
 float        collectRMS(int16_t &ax_out, int16_t &ay_out, int16_t &az_out);
@@ -299,21 +303,31 @@ void setIndicators(MachineState state) {
 
 /**
  * triggerBuzzer()
- * Emits state-specific alert tones:
+ * Non-blocking buzzer driver using millis() time-stepping:
+ *   NORMAL   → silent (no tone)
  *   WARNING  → single 1000 Hz, 100 ms beep
- *   CRITICAL → rapid dual-tone 500/1500 Hz alternating beeps
- *   NORMAL   → silent
+ *   CRITICAL → rapid 500/1500 Hz alternating pattern (4 × 80 ms bursts)
+ *              Advances one step per call via buzzerStep/buzzerStepTime.
  */
 void triggerBuzzer(MachineState state) {
+  unsigned long now = millis();
+  if (state == NORMAL) {
+    noTone(BUZZER_PIN);
+    buzzerStep = 0;
+    return;
+  }
   if (state == WARNING) {
     tone(BUZZER_PIN, 1000, 100);
-  } else if (state == CRITICAL) {
-    tone(BUZZER_PIN, 500,  80);  delay(100);
-    tone(BUZZER_PIN, 1500, 80);  delay(100);
-    tone(BUZZER_PIN, 500,  80);  delay(100);
-    tone(BUZZER_PIN, 1500, 80);
+    buzzerStep = 0;
+    return;
   }
-  // No tone for NORMAL — noTone() is not needed as tone() is non-blocking
+  // CRITICAL: 4-step alternating alarm, each step 100 ms apart
+  if (now - buzzerStepTime >= 100UL) {
+    buzzerStepTime = now;
+    uint16_t freqs[4] = {500, 1500, 500, 1500};
+    tone(BUZZER_PIN, freqs[buzzerStep % 4], 80);
+    buzzerStep = (buzzerStep + 1) % 4;
+  }
 }
 
 // ════════════════════════════════════════════════════════════
@@ -321,21 +335,32 @@ void triggerBuzzer(MachineState state) {
 // ════════════════════════════════════════════════════════════
 
 void updateLCD(float rms, float temp, MachineState state) {
-  lcd.clear();
+  // Full clear only on state transitions to avoid artefacts
+  if (state != lastLcdState) {
+    lcd.clear();
+    lastLcdState = state;
+  }
 
-  // Row 0: RMS value and bearing temp
+  // Row 0: RMS value and bearing temp (overwrite in place)
   lcd.setCursor(0, 0);
   lcd.print("RMS:");
   lcd.print(rms, 2);
   lcd.print(" T:");
+  // Pad temp to 3 chars to clear any previous longer value
+  if ((int)temp < 10)  lcd.print(' ');
+  if ((int)temp < 100) lcd.print(' ');
   lcd.print((int)temp);
   lcd.print((char)223);   // degree symbol
   lcd.print("C");
 
-  // Row 1: Machine state
+  // Row 1: Machine state (pad to 10 chars to erase previous text)
   lcd.setCursor(0, 1);
   lcd.print("State:");
-  lcd.print(stateString(state));
+  const char* s = stateString(state);
+  lcd.print(s);
+  // Pad remaining columns with spaces
+  uint8_t slen = (uint8_t)strlen(s);
+  for (uint8_t i = slen; i < 10; i++) lcd.print(' ');
 }
 
 void printSerialJSON(int16_t ax, int16_t ay, int16_t az,
