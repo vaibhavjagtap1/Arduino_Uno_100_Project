@@ -1,0 +1,50 @@
+# Components List — Project 004
+# Autonomous Line-Following Robot with Obstacle Avoidance and PID Control
+# ================================================================
+
+COMPONENT_ID | COMPONENT_NAME                        | QTY | SPECIFICATION                        | PURPOSE
+-------------|---------------------------------------|-----|--------------------------------------|----------------------------------
+C01          | Arduino Uno R3                        |  1  | ATmega328P 5V 16MHz                  | Main microcontroller
+C02          | IR Proximity Sensor (TCRT5000)        |  5  | 3.3–5V, adjustable sensitivity       | Line detection (S0–S4)
+C03          | HC-SR04 Ultrasonic Sensor             |  1  | 5V, 2–400 cm range ±3 mm            | Obstacle detection
+C04          | L298N Motor Driver Module             |  1  | 5–46V 2A/channel dual H-bridge       | Dual DC motor driver
+C05          | DC Geared Motor 6V                    |  2  | 6V 150 RPM 1:48 gear ratio           | Drive wheels (left & right)
+C06          | Robot Chassis (2WD)                   |  1  | Acrylic/ABS 2-wheel-drive platform   | Robot body / frame
+C07          | Rubber Wheels (65 mm)                 |  2  | 65 mm diameter rubber tyre           | Traction wheels
+C08          | Caster Ball Wheel                     |  1  | Universal 360° rotation              | Front support / balance
+C09          | 7.4V LiPo Battery                     |  1  | 1200 mAh 2S 20C with XT30 connector  | Main power source
+C10          | LM7805 Voltage Reg. / Buck Converter  |  1  | 5V 1A output (IN: 7–12V)            | Arduino 5V supply
+C11          | 5mm LED (Red)                         |  1  | 2.0V forward voltage 20 mA          | Obstacle indicator (D13)
+C12          | 220 Ω Resistor                        |  1  | 1/4W Carbon film ±5%                 | LED current limiting
+C13          | 10 kΩ Resistor                        |  5  | 1/4W Carbon film ±5%                 | Pull-up for IR sensors (optional)
+C14          | Breadboard (Half-size)                |  1  | 400 tie-point solderless             | Prototyping / connections
+C15          | Jumper Wires M-M M-F                  | 40  | 20 cm 28AWG colour-coded             | Connections
+C16          | USB Cable Type-A to B                 |  1  | 1 m standard USB                    | Programming / serial monitor
+C17          | Screws and Spacers M3                 |  8  | M3×10 mm stainless steel             | Chassis assembly
+C18          | Line Tracking Tape (Black)            |  1  | 19 mm wide matte black adhesive      | Track for robot to follow
+
+# ================================================================
+# OPTIONAL COMPONENTS
+# ================================================================
+
+C19          | HC-05 Bluetooth Module                |  1  | AT firmware 2.0, 3.3V logic          | Remote PID tuning via phone
+C20          | OLED 0.96" I2C Display                |  1  | SSD1306 128×64 I2C 3.3/5V           | Live debug display on robot
+
+# ================================================================
+# TOOLS NEEDED
+# ================================================================
+# - Soldering iron (30W) + solder wire
+# - Digital multimeter
+# - Small Phillips and flat-head screwdrivers
+# - Hex key set (M3 Allen key)
+# - Wire stripper / cutter
+# - Hot glue gun (optional, for sensor mounting)
+
+# ================================================================
+# ESTIMATED TOTAL COST
+# ================================================================
+# ESTIMATED TOTAL COST (India): ₹1,500 – ₹2,200
+# ESTIMATED TOTAL COST (USD):   $20 – $30
+#
+# Note: Prices are approximate and vary by supplier.
+#       LiPo battery and charger may add ₹400–₹600 ($6–$9).
