@@ -1,0 +1,61 @@
+# Components List — Project 003
+# Non-Invasive Blood Glucose Monitoring Device using NIR Spectroscopy
+# ====================================================================
+#
+# NOTE: This prototype demonstrates NIR spectroscopy principles on
+#       Arduino hardware for EDUCATIONAL purposes only.
+#       Clinical blood glucose measurement requires FDA/CE-cleared
+#       certified medical devices. Do NOT use this prototype for
+#       medical diagnosis or treatment decisions.
+#
+# Format: COMPONENT_ID | COMPONENT_NAME | QTY | SPECIFICATION | PURPOSE
+# ====================================================================
+
+COMPONENT_ID | COMPONENT_NAME                          | QTY | SPECIFICATION                                    | PURPOSE
+-------------|------------------------------------------|-----|--------------------------------------------------|---------------------------------------------------
+C01          | Arduino Uno R3                           |  1  | ATmega328P, 5V, 16 MHz, 14 digital I/O, 6 ADC   | Main microcontroller — signal processing & control
+C02          | 940 nm IR LED                            |  1  | 5mm, Vf=1.3V, If=100mA, λp=940nm                | Near-infrared tissue illumination (NIR channel)
+C03          | 660 nm Red LED                           |  1  | 5mm, Vf=2.0V, If=20mA, λp=660nm                 | Red reference channel (ratio-metric measurement)
+C04          | Photodiode (BPW34 or similar)            |  2  | Si PIN, 7.5mm², spectral range 430–1100nm        | Detects transmitted NIR / Red light through tissue
+C05          | LM358 Dual Op-Amp                        |  1  | DIP-8, 5V supply, GBW=1MHz                      | Transimpedance amplifier (I→V conversion for PD)
+C06          | 1 MΩ Resistor (Rf — feedback)            |  2  | 1/4W, Metal film, 1% tolerance                   | TIA feedback resistor — sets gain (Vout = Id × Rf)
+C07          | 100 Ω Resistor (LED current limit)       |  2  | 1/4W, Carbon film, 5%                           | Limit current through 940nm and 660nm LEDs
+C08          | 10 kΩ NTC Thermistor                     |  1  | B-coefficient 3950K, 10kΩ at 25°C               | Finger/ambient temperature for compensation
+C09          | 10 kΩ Resistor (NTC divider)             |  1  | 1/4W, Carbon film, 5%                           | Voltage divider series resistor for NTC
+C10          | 10 kΩ Resistor (button pull-down)        |  1  | 1/4W, Carbon film, 5%                           | Pull-down resistor for measurement trigger button
+C11          | Push Button (tactile switch)             |  1  | 6×6mm, momentary, NO                            | Trigger measurement cycle
+C12          | 16×2 LCD Display with I2C Backpack       |  1  | HD44780, PCF8574 I2C at 0x27, 5V                 | Display glucose reading, trend and status
+C13          | 5mm Green LED                            |  1  | Vf=2.2V, If=20mA                                | Normal range indicator (70–140 mg/dL)
+C14          | 5mm Yellow LED                           |  1  | Vf=2.1V, If=20mA                                | Borderline / high range indicator (140–200 mg/dL)
+C15          | 5mm Red LED                              |  1  | Vf=2.0V, If=20mA                                | Alert indicator (< 70 or > 200 mg/dL)
+C16          | 220 Ω Resistor (status LEDs)             |  3  | 1/4W, Carbon film, 5%                           | Current limiting for status LEDs (D9, D10, D11)
+C17          | Active Buzzer (5V)                       |  1  | 5V, 2400 Hz, 85 dB                              | Audible alert for critical glucose levels
+C18          | 0.1 µF Ceramic Capacitor (decoupling)    |  4  | 50V, C0G/X7R                                    | Power supply decoupling near ICs
+C19          | 10 µF Electrolytic Capacitor             |  2  | 16V, 105°C                                      | Bulk decoupling on 5V rail
+C20          | Breadboard (Full-size or Half-size)      |  1  | 830 or 400 tie-point                            | Prototyping connections
+C21          | Jumper Wires (M-M, M-F)                  | 40  | 20 cm, various colours                          | Wiring connections
+C22          | USB Cable Type-A to B                    |  1  | 1m, for Arduino programming                     | Power and serial programming/monitoring
+C23          | 9V Battery or 5V DC Adapter              |  1  | 9V 1A or 5V 2A (USB)                            | Arduino power supply
+C24          | 3D-Printed or Cardboard Finger Clip      |  1  | Custom, black interior to block ambient light   | Holds finger between LED and photodiode
+C25          | Black Heat-Shrink Tubing                 | 5cm | 6mm diameter                                   | Light-isolation sleeve for probe assembly
+
+# OPTIONAL / UPGRADE COMPONENTS:
+C26          | AS7263 NIR Spectral Sensor               |  1  | 6-channel NIR (610–860nm), I2C                  | More accurate spectral measurement (upgrade)
+C27          | MAX30102 Pulse Oximeter Sensor           |  1  | Integrated LED+PD, I2C, 1.8V                    | Compact pulse-ox style probe (upgrade)
+C28          | DS18B20 Digital Thermometer              |  1  | ±0.5°C, 1-wire, waterproof probe                | More accurate temperature measurement
+C29          | HC-05 Bluetooth Module                   |  1  | UART, 2.4GHz, 9600 baud                         | Wireless data logging to smartphone
+C30          | SD Card Module                           |  1  | SPI, 3.3V/5V                                    | Local data logging
+
+# TOOLS NEEDED:
+# - Soldering iron + solder (for permanent build / op-amp circuit)
+# - Multimeter (calibration and debugging)
+# - Oscilloscope (optional, for TIA signal quality check)
+# - Black electrical tape or black cardboard (for probe light isolation)
+# - Small screwdrivers
+
+# ESTIMATED TOTAL COST (India): ₹900 – ₹1400
+# ESTIMATED TOTAL COST (USD):   $12 – $18
+#
+# NOTE: Costs exclude optional upgrade components.
+#       Prices based on common Indian electronics retailers (Robu, Evelta, etc.)
+#       and international sources (Amazon, Adafruit) as of 2025.
