@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600" font-family="monospace" font-size="11">
+
+  <!-- Background -->
+  <rect width="900" height="600" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="450" y="26" text-anchor="middle" fill="#c9d1d9" font-size="15" font-weight="bold">Project 003 — NIR Glucose Monitor Circuit Diagram</text>
+  <text x="450" y="44" text-anchor="middle" fill="#f85149" font-size="10">⚠ Educational Prototype — NOT for medical diagnosis</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ARDUINO UNO BLOCK (center)
+  ═══════════════════════════════════════════════════════ -->
+  <rect x="340" y="200" width="220" height="280" rx="8" fill="#1a2332" stroke="#58a6ff" stroke-width="2"/>
+  <text x="450" y="220" text-anchor="middle" fill="#58a6ff" font-size="12" font-weight="bold">Arduino Uno R3</text>
+  <text x="450" y="234" text-anchor="middle" fill="#8b949e" font-size="9">ATmega328P · 5V · 16 MHz</text>
+
+  <!-- Left pins (D-side) -->
+  <text x="348" y="260" fill="#c9d1d9" font-size="9">D5  ●</text>
+  <text x="348" y="278" fill="#c9d1d9" font-size="9">D6  ●</text>
+  <text x="348" y="296" fill="#c9d1d9" font-size="9">D2  ●</text>
+  <text x="348" y="314" fill="#c9d1d9" font-size="9">D9  ●</text>
+  <text x="348" y="332" fill="#c9d1d9" font-size="9">D10 ●</text>
+  <text x="348" y="350" fill="#c9d1d9" font-size="9">D11 ●</text>
+  <text x="348" y="368" fill="#c9d1d9" font-size="9">D12 ●</text>
+
+  <!-- Right pins (A-side) -->
+  <text x="510" y="260" fill="#c9d1d9" font-size="9">● A0</text>
+  <text x="510" y="278" fill="#c9d1d9" font-size="9">● A1</text>
+  <text x="510" y="296" fill="#c9d1d9" font-size="9">● A2</text>
+  <text x="510" y="440" fill="#c9d1d9" font-size="9">● A4</text>
+  <text x="510" y="458" fill="#c9d1d9" font-size="9">● A5</text>
+
+  <!-- GND / 5V labels -->
+  <text x="388" y="460" fill="#ff7b72" font-size="9">GND</text>
+  <text x="425" y="460" fill="#3fb950" font-size="9">5V</text>
+  <text x="460" y="460" fill="#ff7b72" font-size="9">GND</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FINGER PROBE BOX (top center)
+  ═══════════════════════════════════════════════════════ -->
+  <rect x="360" y="65" width="180" height="90" rx="8" fill="#1e2a1e" stroke="#3fb950" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="450" y="82" text-anchor="middle" fill="#3fb950" font-size="10" font-weight="bold">Finger Probe</text>
+  <!-- Finger shape -->
+  <rect x="400" y="90" width="100" height="40" rx="20" fill="#c9a882" stroke="#8b7355" stroke-width="1"/>
+  <text x="450" y="113" text-anchor="middle" fill="#1a0a00" font-size="9" font-weight="bold">FINGER</text>
+  <!-- IR LED arrow in -->
+  <text x="375" y="103" text-anchor="middle" fill="#ff6b35" font-size="9">940nm</text>
+  <text x="375" y="115" text-anchor="middle" fill="#ff6b35" font-size="9">IR LED →</text>
+  <!-- Red LED -->
+  <text x="375" y="130" text-anchor="middle" fill="#ff4444" font-size="9">660nm</text>
+  <text x="375" y="142" text-anchor="middle" fill="#ff4444" font-size="9">Red LED →</text>
+  <!-- Photodiode -->
+  <text x="528" y="109" text-anchor="middle" fill="#bc8cff" font-size="9">→ PD</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       940nm IR LED + resistor (left side)
+  ═══════════════════════════════════════════════════════ -->
+  <!-- Wire from D6 to resistor -->
+  <line x1="340" y1="278" x2="240" y2="278" stroke="#ff6b35" stroke-width="1.2"/>
+  <!-- Resistor R1 -->
+  <rect x="200" y="270" width="40" height="16" rx="3" fill="#2d2a1a" stroke="#d29922" stroke-width="1.2"/>
+  <text x="220" y="282" text-anchor="middle" fill="#d29922" font-size="8">100Ω</text>
+  <!-- Wire to LED -->
+  <line x1="200" y1="278" x2="170" y2="278" stroke="#ff6b35" stroke-width="1.2"/>
+  <!-- IR LED symbol -->
+  <polygon points="160,270 170,278 160,286" fill="#ff6b35" stroke="#ff6b35" stroke-width="1"/>
+  <line x1="170" y1="278" x2="150" y2="278" stroke="#ff6b35" stroke-width="1"/>
+  <line x1="150" y1="270" x2="150" y2="286" stroke="#ff6b35" stroke-width="1.2"/>
+  <text x="140" y="294" text-anchor="middle" fill="#ff6b35" font-size="8">940nm</text>
+  <text x="140" y="304" text-anchor="middle" fill="#ff6b35" font-size="8">IR LED</text>
+  <!-- GND wire -->
+  <line x1="150" y1="286" x2="150" y2="310" stroke="#ff7b72" stroke-width="1"/>
+  <text x="150" y="322" text-anchor="middle" fill="#ff7b72" font-size="9">GND</text>
+  <!-- Wire up to finger probe -->
+  <line x1="150" y1="270" x2="150" y2="115" stroke="#ff6b35" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="150" y1="115" x2="400" y2="115" stroke="#ff6b35" stroke-width="1" stroke-dasharray="4,2"/>
+  <!-- D6 label -->
+  <text x="295" y="272" fill="#ff6b35" font-size="8">D6 (PWM)</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       660nm Red LED + resistor (left side, D5)
+  ═══════════════════════════════════════════════════════ -->
+  <!-- Wire from D5 -->
+  <line x1="340" y1="260" x2="240" y2="260" stroke="#ff4444" stroke-width="1.2"/>
+  <!-- Resistor R2 -->
+  <rect x="200" y="252" width="40" height="16" rx="3" fill="#2d2a1a" stroke="#d29922" stroke-width="1.2"/>
+  <text x="220" y="264" text-anchor="middle" fill="#d29922" font-size="8">100Ω</text>
+  <!-- Wire to Red LED -->
+  <line x1="200" y1="260" x2="170" y2="260" stroke="#ff4444" stroke-width="1.2"/>
+  <!-- Red LED symbol -->
+  <polygon points="160,252 170,260 160,268" fill="#ff4444" stroke="#ff4444" stroke-width="1"/>
+  <line x1="170" y1="260" x2="150" y2="260" stroke="#ff4444" stroke-width="1"/>
+  <!-- connect to same cathode node -->
+  <line x1="150" y1="252" x2="150" y2="268" stroke="#ff4444" stroke-width="1.2"/>
+  <text x="130" y="250" text-anchor="middle" fill="#ff4444" font-size="8">660nm</text>
+  <text x="130" y="260" text-anchor="middle" fill="#ff4444" font-size="8">Red LED</text>
+  <line x1="150" y1="252" x2="150" y2="238" stroke="#ff4444" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="150" y1="238" x2="400" y2="238" stroke="#ff4444" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="295" y="254" fill="#ff4444" font-size="8">D5 (PWM)</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PHOTODIODE + TIA op-amp (right side)
+  ═══════════════════════════════════════════════════════ -->
+  <!-- Op-amp block -->
+  <polygon points="700,230 700,290 740,260" fill="#1a1a2e" stroke="#bc8cff" stroke-width="1.5"/>
+  <text x="715" y="257" text-anchor="middle" fill="#bc8cff" font-size="8">LM358</text>
+  <text x="715" y="268" text-anchor="middle" fill="#bc8cff" font-size="8">TIA</text>
+
+  <!-- Photodiode symbol -->
+  <circle cx="660" cy="255" r="8" fill="#1a1a2e" stroke="#bc8cff" stroke-width="1.2"/>
+  <polygon points="655,250 665,255 655,260" fill="#bc8cff"/>
+  <line x1="653" y1="248" x2="653" y2="262" stroke="#bc8cff" stroke-width="1"/>
+  <text x="660" y="275" text-anchor="middle" fill="#bc8cff" font-size="8">BPW34</text>
+
+  <!-- Wire PD to opamp -->
+  <line x1="668" y1="255" x2="700" y2="255" stroke="#bc8cff" stroke-width="1.2"/>
+
+  <!-- Feedback resistor Rf -->
+  <line x1="700" y1="260" x2="685" y2="220" stroke="#bc8cff" stroke-width="1" stroke-dasharray="3,2"/>
+  <rect x="712" y="218" width="40" height="14" rx="3" fill="#2d2a1a" stroke="#d29922" stroke-width="1"/>
+  <text x="732" y="228" text-anchor="middle" fill="#d29922" font-size="8">1MΩ Rf</text>
+  <line x1="740" y1="225" x2="740" y2="260" stroke="#bc8cff" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Output wire to A0 -->
+  <line x1="740" y1="260" x2="780" y2="260" stroke="#bc8cff" stroke-width="1.2"/>
+  <line x1="780" y1="260" x2="780" y2="258" stroke="#bc8cff" stroke-width="1.2"/>
+  <line x1="780" y1="258" x2="560" y2="258" stroke="#bc8cff" stroke-width="1.2"/>
+  <text x="680" y="300" fill="#bc8cff" font-size="8">A0 (940nm)</text>
+
+  <!-- Second TIA for A1 (660nm) -->
+  <polygon points="700,310 700,370 740,340" fill="#1a1a2e" stroke="#9ecbff" stroke-width="1.5"/>
+  <text x="715" y="337" text-anchor="middle" fill="#9ecbff" font-size="8">LM358</text>
+  <text x="715" y="348" text-anchor="middle" fill="#9ecbff" font-size="8">TIA</text>
+
+  <circle cx="660" cy="335" r="8" fill="#1a1a2e" stroke="#9ecbff" stroke-width="1.2"/>
+  <polygon points="655,330 665,335 655,340" fill="#9ecbff"/>
+  <line x1="653" y1="328" x2="653" y2="342" stroke="#9ecbff" stroke-width="1"/>
+  <line x1="668" y1="335" x2="700" y2="335" stroke="#9ecbff" stroke-width="1.2"/>
+  <text x="660" y="355" text-anchor="middle" fill="#9ecbff" font-size="8">BPW34</text>
+
+  <!-- Output A1 -->
+  <line x1="740" y1="340" x2="800" y2="340" stroke="#9ecbff" stroke-width="1.2"/>
+  <line x1="800" y1="340" x2="800" y2="278" stroke="#9ecbff" stroke-width="1.2"/>
+  <line x1="800" y1="278" x2="560" y2="278" stroke="#9ecbff" stroke-width="1.2"/>
+  <text x="680" y="375" fill="#9ecbff" font-size="8">A1 (660nm)</text>
+
+  <!-- Finger probe to PD wire -->
+  <line x1="500" y1="110" x2="640" y2="110" stroke="#bc8cff" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="640" y1="110" x2="660" y2="250" stroke="#bc8cff" stroke-width="1" stroke-dasharray="4,2"/>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NTC THERMISTOR — A2
+  ═══════════════════════════════════════════════════════ -->
+  <text x="610" y="430" text-anchor="middle" fill="#ffa657" font-size="9" font-weight="bold">NTC Thermistor</text>
+  <!-- Voltage divider -->
+  <line x1="610" y1="435" x2="610" y2="448" stroke="#ffa657" stroke-width="1.2"/>
+  <rect x="592" y="448" width="36" height="14" rx="3" fill="#2d2a1a" stroke="#d29922" stroke-width="1"/>
+  <text x="610" y="458" text-anchor="middle" fill="#d29922" font-size="8">10kΩ</text>
+  <line x1="610" y1="462" x2="610" y2="475" stroke="#ffa657" stroke-width="1.2"/>
+  <text x="610" y="488" text-anchor="middle" fill="#ff7b72" font-size="8">GND</text>
+  <!-- Wire to 5V top and A2 middle -->
+  <line x1="610" y1="435" x2="610" y2="415" stroke="#3fb950" stroke-width="1.2"/>
+  <text x="610" y="413" text-anchor="middle" fill="#3fb950" font-size="8">5V</text>
+  <!-- Junction to A2 -->
+  <line x1="610" y1="455" x2="560" y2="455" stroke="#ffa657" stroke-width="1.2"/>
+  <line x1="560" y1="455" x2="560" y2="296" stroke="#ffa657" stroke-width="1.2"/>
+  <text x="582" y="450" fill="#ffa657" font-size="8">A2</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PUSH BUTTON — D2
+  ═══════════════════════════════════════════════════════ -->
+  <!-- Button -->
+  <rect x="180" y="365" width="40" height="20" rx="4" fill="#1a2332" stroke="#58a6ff" stroke-width="1.2"/>
+  <text x="200" y="379" text-anchor="middle" fill="#58a6ff" font-size="9">BTN</text>
+  <!-- Wire to D2 -->
+  <line x1="220" y1="375" x2="340" y2="296" stroke="#58a6ff" stroke-width="1.2"/>
+  <text x="275" y="330" fill="#58a6ff" font-size="8">D2</text>
+  <!-- Pull-down -->
+  <line x1="200" y1="385" x2="200" y2="410" stroke="#ff7b72" stroke-width="1"/>
+  <rect x="184" y="410" width="32" height="14" rx="3" fill="#2d2a1a" stroke="#d29922" stroke-width="1"/>
+  <text x="200" y="420" text-anchor="middle" fill="#d29922" font-size="8">10kΩ</text>
+  <line x1="200" y1="424" x2="200" y2="434" stroke="#ff7b72" stroke-width="1"/>
+  <text x="200" y="444" text-anchor="middle" fill="#ff7b72" font-size="8">GND</text>
+  <!-- 5V side -->
+  <line x1="180" y1="375" x2="165" y2="375" stroke="#3fb950" stroke-width="1"/>
+  <text x="155" y="378" text-anchor="middle" fill="#3fb950" font-size="8">5V</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       GREEN LED D9
+  ═══════════════════════════════════════════════════════ -->
+  <line x1="340" y1="314" x2="270" y2="480" stroke="#3fb950" stroke-width="1.2"/>
+  <rect x="252" y="473" width="36" height="14" rx="3" fill="#2d2a1a" stroke="#d29922" stroke-width="1"/>
+  <text x="270" y="483" text-anchor="middle" fill="#d29922" font-size="8">220Ω</text>
+  <circle cx="270" cy="505" r="8" fill="#1a2a1a" stroke="#3fb950" stroke-width="1.5"/>
+  <text x="270" y="508" text-anchor="middle" fill="#3fb950" font-size="8">G</text>
+  <text x="270" y="522" text-anchor="middle" fill="#3fb950" font-size="7">D9</text>
+  <line x1="270" y1="513" x2="270" y2="530" stroke="#ff7b72" stroke-width="1"/>
+  <text x="270" y="540" text-anchor="middle" fill="#ff7b72" font-size="7">GND</text>
+
+  <!-- YELLOW LED D10 -->
+  <line x1="340" y1="332" x2="340" y2="480" stroke="#d29922" stroke-width="1.2"/>
+  <rect x="322" y="473" width="36" height="14" rx="3" fill="#2d2a1a" stroke="#d29922" stroke-width="1"/>
+  <text x="340" y="483" text-anchor="middle" fill="#d29922" font-size="8">220Ω</text>
+  <circle cx="340" cy="505" r="8" fill="#2a2a1a" stroke="#d29922" stroke-width="1.5"/>
+  <text x="340" y="508" text-anchor="middle" fill="#d29922" font-size="8">Y</text>
+  <text x="340" y="522" text-anchor="middle" fill="#d29922" font-size="7">D10</text>
+  <line x1="340" y1="513" x2="340" y2="530" stroke="#ff7b72" stroke-width="1"/>
+  <text x="340" y="540" text-anchor="middle" fill="#ff7b72" font-size="7">GND</text>
+
+  <!-- RED LED D11 -->
+  <line x1="340" y1="350" x2="415" y2="480" stroke="#f85149" stroke-width="1.2"/>
+  <rect x="397" y="473" width="36" height="14" rx="3" fill="#2d2a1a" stroke="#d29922" stroke-width="1"/>
+  <text x="415" y="483" text-anchor="middle" fill="#d29922" font-size="8">220Ω</text>
+  <circle cx="415" cy="505" r="8" fill="#2a1a1a" stroke="#f85149" stroke-width="1.5"/>
+  <text x="415" y="508" text-anchor="middle" fill="#f85149" font-size="8">R</text>
+  <text x="415" y="522" text-anchor="middle" fill="#f85149" font-size="7">D11</text>
+  <line x1="415" y1="513" x2="415" y2="530" stroke="#ff7b72" stroke-width="1"/>
+  <text x="415" y="540" text-anchor="middle" fill="#ff7b72" font-size="7">GND</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       BUZZER — D12
+  ═══════════════════════════════════════════════════════ -->
+  <line x1="340" y1="368" x2="490" y2="480" stroke="#ffa657" stroke-width="1.2"/>
+  <rect x="468" y="473" width="44" height="20" rx="5" fill="#1a1a1a" stroke="#ffa657" stroke-width="1.5"/>
+  <text x="490" y="487" text-anchor="middle" fill="#ffa657" font-size="8">BUZZER</text>
+  <text x="490" y="522" text-anchor="middle" fill="#ffa657" font-size="7">D12</text>
+  <line x1="490" y1="493" x2="490" y2="530" stroke="#ff7b72" stroke-width="1"/>
+  <text x="490" y="540" text-anchor="middle" fill="#ff7b72" font-size="7">GND</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       LCD I2C 16×2 — A4 (SDA), A5 (SCL)
+  ═══════════════════════════════════════════════════════ -->
+  <rect x="580" y="420" width="130" height="55" rx="5" fill="#1a2332" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="645" y="437" text-anchor="middle" fill="#58a6ff" font-size="10" font-weight="bold">LCD 16×2</text>
+  <text x="645" y="450" text-anchor="middle" fill="#8b949e" font-size="8">I2C @ 0x27</text>
+  <text x="645" y="463" text-anchor="middle" fill="#8b949e" font-size="8">SDA=A4  SCL=A5</text>
+  <!-- Wire SDA A4 -->
+  <line x1="560" y1="440" x2="580" y2="447" stroke="#58a6ff" stroke-width="1.2"/>
+  <text x="562" y="438" fill="#58a6ff" font-size="8">A4</text>
+  <!-- Wire SCL A5 -->
+  <line x1="560" y1="458" x2="580" y2="458" stroke="#9ecbff" stroke-width="1.2"/>
+  <text x="562" y="456" fill="#9ecbff" font-size="8">A5</text>
+  <!-- LCD power -->
+  <line x1="645" y1="420" x2="645" y2="410" stroke="#3fb950" stroke-width="1"/>
+  <text x="645" y="408" text-anchor="middle" fill="#3fb950" font-size="8">5V</text>
+  <line x1="710" y1="438" x2="730" y2="438" stroke="#ff7b72" stroke-width="1"/>
+  <text x="738" y="441" fill="#ff7b72" font-size="8">GND</text>
+
+  <!-- ═══════════════════════════════════════════════════════
+       LEGEND BOX
+  ═══════════════════════════════════════════════════════ -->
+  <rect x="12" y="400" width="130" height="160" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="77" y="416" text-anchor="middle" fill="#c9d1d9" font-size="9" font-weight="bold">Legend</text>
+  <line x1="22" y1="426" x2="42" y2="426" stroke="#ff6b35" stroke-width="2"/>
+  <text x="48" y="429" fill="#c9d1d9" font-size="8">940nm IR LED path</text>
+  <line x1="22" y1="440" x2="42" y2="440" stroke="#ff4444" stroke-width="2"/>
+  <text x="48" y="443" fill="#c9d1d9" font-size="8">660nm Red LED path</text>
+  <line x1="22" y1="454" x2="42" y2="454" stroke="#bc8cff" stroke-width="2"/>
+  <text x="48" y="457" fill="#c9d1d9" font-size="8">Photodiode / TIA path</text>
+  <line x1="22" y1="468" x2="42" y2="468" stroke="#ffa657" stroke-width="2"/>
+  <text x="48" y="471" fill="#c9d1d9" font-size="8">NTC Thermistor path</text>
+  <line x1="22" y1="482" x2="42" y2="482" stroke="#58a6ff" stroke-width="2"/>
+  <text x="48" y="485" fill="#c9d1d9" font-size="8">I2C / control signals</text>
+  <line x1="22" y1="496" x2="42" y2="496" stroke="#3fb950" stroke-width="2"/>
+  <text x="48" y="499" fill="#c9d1d9" font-size="8">5V power rail</text>
+  <line x1="22" y1="510" x2="42" y2="510" stroke="#ff7b72" stroke-width="2"/>
+  <text x="48" y="513" fill="#c9d1d9" font-size="8">GND rail</text>
+  <line x1="22" y1="524" x2="42" y2="524" stroke="#c9d1d9" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="48" y="527" fill="#c9d1d9" font-size="8">Probe / optical path</text>
+  <text x="22" y="548" fill="#8b949e" font-size="7">All resistors 1/4W unless noted</text>
+
+</svg>

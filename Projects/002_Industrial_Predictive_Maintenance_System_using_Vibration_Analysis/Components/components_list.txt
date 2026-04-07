@@ -1,0 +1,64 @@
+# Components List — Project 002
+# Industrial Predictive Maintenance System using Vibration Analysis
+# ==================================================================
+
+COMPONENT_ID | COMPONENT_NAME                        | QTY | SPECIFICATION                              | PURPOSE
+-------------|---------------------------------------|-----|--------------------------------------------|------------------------------------------
+C01          | Arduino Uno R3                        |  1  | ATmega328P, 5V, 16 MHz                     | Main microcontroller
+C02          | ADXL345 Accelerometer Module          |  1  | ±16g, I2C/SPI, 3.3–5V, 13-bit resolution  | 3-axis vibration sensing (X, Y, Z)
+C03          | DS18B20 Temperature Sensor            |  1  | -55 to +125°C, ±0.5°C, 1-Wire, TO-92      | Bearing/machine temperature monitoring
+C04          | 16×2 LCD Display with I2C Backpack    |  1  | HD44780, I2C 0x27, 5V                      | Display RMS vibration and machine state
+C05          | 5V Single-Channel Relay Module        |  1  | 10A/250VAC, Opto-isolated, active LOW      | Machine emergency shutdown trigger
+C06          | 5mm Green LED                         |  1  | 2.2V forward voltage, 20 mA                | NORMAL state indicator (D9)
+C07          | 5mm Yellow LED                        |  1  | 2.1V forward voltage, 20 mA                | WARNING state indicator (D10)
+C08          | 5mm Red LED                           |  1  | 2.0V forward voltage, 20 mA                | CRITICAL state indicator (D11)
+C09          | 220 Ω Resistor                        |  3  | 1/4W, Carbon film, ±5%                     | LED current limiting (one per LED)
+C10          | 4.7 kΩ Resistor                       |  1  | 1/4W, Carbon film, ±5%                     | DS18B20 DATA pin pull-up to 5V
+C11          | Piezo Buzzer (Active)                 |  1  | 5V, 2400 Hz, self-oscillating               | Alert tones for WARNING/CRITICAL states
+C12          | Breadboard (Half-size)                |  1  | 400 tie-point, solderless                  | Prototyping and component connections
+C13          | Jumper Wires (M-M, M-F)               | 30  | 20 cm, assorted colours                    | Wiring connections
+C14          | USB Cable Type-A to B                 |  1  | 1 m, for Arduino                           | Programming and serial communication
+C15          | 9V DC Adapter or USB Power Bank       |  1  | 9V 1A or 5V 2A                             | Arduino power supply
+
+# OPTIONAL (for enhanced deployment):
+C16          | Small Industrial Machine / Motor      |  1  | Any 5–12V DC motor for demo                | Vibration source for testing
+C17          | Machine Mounting Bracket / Tape       |  1  | Double-sided foam tape or M3 bolts         | Secure ADXL345 to machine surface
+C18          | Enclosure Box (ABS Plastic)           |  1  | ~120×80×40 mm                              | Protect electronics in industrial env.
+
+# TOOLS NEEDED:
+# - Multimeter (verify wiring continuity and I2C address)
+# - Arduino IDE with libraries installed
+# - Screwdriver set (M2/M3)
+# - Soldering iron (optional, for permanent installation)
+
+# LIBRARY DEPENDENCIES (install via Arduino Library Manager):
+# - Adafruit ADXL345        by Adafruit Industries
+# - Adafruit Unified Sensor by Adafruit Industries
+# - LiquidCrystal_I2C       by Frank de Brabander
+# - OneWire                 by Paul Stoffregen
+# - DallasTemperature       by Miles Burton
+# - Wire                    (built-in, no install needed)
+
+# COST BREAKDOWN:
+# ──────────────────────────────────────────────
+# COMPONENT               QTY   INR       USD
+# ──────────────────────────────────────────────
+# Arduino Uno R3            1   ₹450     $5.50
+# ADXL345 Module            1   ₹180     $2.20
+# DS18B20                   1    ₹60     $0.75
+# I2C LCD 16×2              1   ₹120     $1.50
+# Relay Module (5V)         1    ₹80     $1.00
+# Green LED                 1     ₹5     $0.05
+# Yellow LED                1     ₹5     $0.05
+# Red LED                   1     ₹5     $0.05
+# 220Ω Resistor ×3          3     ₹3     $0.04
+# 4.7kΩ Resistor ×1         1     ₹1     $0.01
+# Active Buzzer             1    ₹20     $0.25
+# Breadboard (half)         1    ₹60     $0.75
+# Jumper Wires (30pc)       1    ₹50     $0.65
+# USB Cable                 1    ₹50     $0.65
+# 9V DC Adapter             1    ₹80     $1.00
+# ──────────────────────────────────────────────
+# ESTIMATED TOTAL COST (India): ₹1,169 – ₹1,350
+# ESTIMATED TOTAL COST (USD):   $14 – $18
+# ──────────────────────────────────────────────
