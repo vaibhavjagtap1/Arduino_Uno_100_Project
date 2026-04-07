@@ -358,7 +358,8 @@ void updateLCD(float rms, float temp, MachineState state) {
   lcd.print("State:");
   const char* s = stateString(state);
   lcd.print(s);
-  // Pad remaining columns with spaces
+  // Pad remaining columns with spaces so longer previous text is erased.
+  // "CRITICAL" is 8 chars; state field is 16 - 6 ("State:") = 10 chars wide.
   uint8_t slen = (uint8_t)strlen(s);
   for (uint8_t i = slen; i < 10; i++) lcd.print(' ');
 }
