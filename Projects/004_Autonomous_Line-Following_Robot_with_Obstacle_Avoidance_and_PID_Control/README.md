@@ -143,7 +143,7 @@ troubleshooting table, and future enhancements:
 
 | ← Previous | Current | Next → |
 |:---:|:---:|:---:|
-| [003 Non-Invasive Blood Glucose Monitor](../003_Non-Invasive_Blood_Glucose_Monitor_using_NIR_and_ML/) | **004 Line-Following Robot** | [005 Smart Energy Monitor](../005_Smart_Energy_Monitor/) |
+| [003 Non-Invasive Blood Glucose Monitor](../003_Non-Invasive_Blood_Glucose_Monitoring_Device_using_NIR_Spectroscopy/) | **004 Line-Following Robot** | [005 Smart Energy Monitor](../005_Smart_Energy_Monitor/) |
 
 ---
 
